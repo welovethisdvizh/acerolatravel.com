@@ -633,7 +633,7 @@ const enhanceExpeditionDetailPage = () => {
     booking.className = 'dossier-booking';
     booking.setAttribute('data-reveal', '');
     booking.innerHTML = `
-      <span class="dossier-card-kicker">Booking brief</span>
+      <span class="dossier-card-kicker">Коротко об участии</span>
       <h3>${heroTitle}</h3>
       <dl>
         <div><dt>Даты</dt><dd>${data.dates}</dd></div>

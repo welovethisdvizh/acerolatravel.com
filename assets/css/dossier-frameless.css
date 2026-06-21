@@ -5,6 +5,7 @@ body.exp-page .included-card,
 body.exp-page .comfort-card,
 body.exp-page .guide,
 body.exp-page .dossier-fit article,
+body.exp-page .dossier-booking,
 body.exp-page .expedition-atmosphere-copy {
   background: transparent !important;
   border: 0 !important;
@@ -16,8 +17,116 @@ body.exp-page .expedition-atmosphere-copy {
 body.exp-page .overview-card,
 body.exp-page .included-card,
 body.exp-page .dossier-fit article,
+body.exp-page .dossier-booking,
 body.exp-page .expedition-atmosphere-copy {
   padding: 0 !important;
+}
+
+body.exp-page .dossier-booking {
+  max-width: 410px !important;
+  color: #06101a !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .dossier-booking .dossier-card-kicker {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 12px !important;
+  color: #0077b6 !important;
+  font-size: .72rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+}
+
+body.exp-page .dossier-booking .dossier-card-kicker::before {
+  content: "" !important;
+  width: 34px !important;
+  height: 1px !important;
+  background: currentColor !important;
+}
+
+body.exp-page .dossier-booking h3 {
+  max-width: 390px !important;
+  margin: 0 0 24px !important;
+  color: #06101a !important;
+  font-size: clamp(2.25rem, 4.6vw, 3.7rem) !important;
+  line-height: .98 !important;
+}
+
+body.exp-page .dossier-booking dl {
+  display: grid !important;
+  gap: 14px !important;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .dossier-booking dl div {
+  display: grid !important;
+  grid-template-columns: minmax(120px, 1fr) auto !important;
+  gap: 18px !important;
+  align-items: baseline !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+body.exp-page .dossier-booking dt {
+  color: rgba(6, 16, 26, .45) !important;
+  font-size: .86rem !important;
+  font-weight: 500 !important;
+}
+
+body.exp-page .dossier-booking dd {
+  margin: 0 !important;
+  color: #06101a !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .95rem !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+  text-align: right !important;
+}
+
+body.exp-page .dossier-booking .btn {
+  width: auto !important;
+  min-height: 44px !important;
+  margin: 4px 10px 0 0 !important;
+  padding: 11px 18px !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .dossier-booking .btn-wood {
+  color: #fff !important;
+  background: #06101a !important;
+  border: 1px solid #06101a !important;
+}
+
+body.exp-page .dossier-booking .btn-ghost {
+  min-height: auto !important;
+  padding: 9px 0 4px !important;
+  color: #06101a !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(6, 16, 26, .72) !important;
+  border-radius: 0 !important;
+}
+
+body.exp-page .dossier-booking p {
+  max-width: 340px !important;
+  margin-top: 22px !important;
+  color: rgba(6, 16, 26, .58) !important;
+  font-size: .98rem !important;
+  line-height: 1.6 !important;
 }
 
 body.exp-page .expedition-atmosphere-panel {
