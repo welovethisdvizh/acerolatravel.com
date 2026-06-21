@@ -112,24 +112,6 @@ body.exp-page .date-row b {
   }
 }
 
-body.exp-page .dossier-coordinates {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 28px;
-}
-
-body.exp-page .dossier-coordinates span {
-  border: 1px solid rgba(11, 21, 32, .08);
-  border-radius: 999px;
-  padding: 8px 10px;
-  color: var(--lab-soft);
-  background: rgba(255, 255, 255, .7);
-  font-size: .68rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
 body.exp-page .bullet-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px 24px;
@@ -428,10 +410,6 @@ body.exp-page .guide h3 {
 body.exp-page .guide p {
   color: var(--lab-muted) !important;
 }
-body.exp-page .dossier-coordinates span {
-  color: var(--lab-muted) !important;
-  border-color: rgba(11, 21, 32, 0.15) !important;
-}
 body.exp-page .expedition-route-region > div {
   background: rgba(11, 21, 32, 0.9) !important;
 }
@@ -504,7 +482,7 @@ body.exp-page .faq-item {
   padding: 16px 0 !important;
 }
 
-/* Dossier Fit Grid */
+/* Expedition Fit Grid */
 body.exp-page .dossier-fit article {
   border: none !important;
   border-radius: 0 !important;

@@ -109,6 +109,57 @@ body.exp-page .result-card {
   box-shadow: none !important;
 }
 
+body.exp-page .expedition-level-detail {
+  --level-accent: #0077b6;
+  --level-ink: #06101a;
+  --level-bg: rgba(0, 119, 182, .06);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px 12px;
+  max-width: 780px;
+  margin: 0 0 18px;
+  padding: 0 0 0 16px;
+  border-left: 2px solid var(--level-accent);
+  color: var(--level-ink);
+}
+
+body.exp-page .expedition-level-detail__label {
+  color: var(--level-accent);
+  font-family: Manrope, Arial, sans-serif;
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+body.exp-page .expedition-level-detail strong {
+  color: var(--level-ink);
+  font-family: Manrope, Arial, sans-serif;
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .03em;
+  line-height: 1;
+  text-transform: none;
+}
+
+body.exp-page .expedition-level-detail em {
+  color: color-mix(in srgb, var(--level-ink) 70%, var(--level-accent));
+  font-family: Cormorant Garamond, serif;
+  font-size: clamp(1.04rem, 1.35vw, 1.2rem);
+  font-style: italic;
+  line-height: 1.1;
+}
+
+body.exp-page .expedition-level-detail p {
+  max-width: 560px;
+  margin: 3px 0 0;
+  color: rgba(6, 16, 26, .58);
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
 @media (max-width: 980px) {
   body.exp-page .expedition-atmosphere-panel {
     grid-template-columns: 1fr !important;
@@ -116,5 +167,9 @@ body.exp-page .result-card {
 
   body.exp-page .expedition-atmosphere-copy h3 {
     max-width: 100% !important;
+  }
+
+  body.exp-page .expedition-level-detail {
+    max-width: 100%;
   }
 }

@@ -1,9 +1,44 @@
 /* Expedition detail data */
+window.ACEROLA_EXPEDITION_LEVELS = {
+    calm: {
+      level: 'Спокойный',
+      name: 'Acerola. Вдох',
+      slogan: 'Первый глоток Урала',
+      anchor: 'Безопасность, свежесть, начало. Подходит для новичков и семей.',
+      tone: 'calm'
+    },
+    rhythm: {
+      level: 'Насыщенный',
+      name: 'Acerola. Ритм',
+      slogan: 'Когда сердце бьётся в такт горам',
+      anchor: 'Драйв, энергия, фотогеничность. Для активной молодёжи.',
+      tone: 'rhythm'
+    },
+    peak: {
+      level: 'Суперэкстрим',
+      name: 'Acerola. Пик',
+      slogan: 'Только вершина — не предел',
+      anchor: 'Элитарность, закрытый клуб, физический и ментальный рубеж.',
+      tone: 'peak'
+    }
+  };
+
+window.ACEROLA_CARD_LEVELS = {
+    'dossier-01': 'peak',
+    'dossier-02': 'rhythm',
+    'dossier-03': 'peak',
+    'dossier-04': 'peak',
+    'dossier-05': 'rhythm',
+    'dossier-06': 'rhythm',
+    'dossier-07': 'calm'
+  };
+
 window.ACEROLA_EXPEDITION_DETAILS = {
     'usvinskie-stolby.html': {
       region: 'Россия / Пермский край',
       label: 'Новый спокойный тур',
       labelTone: 'open',
+      levelKey: 'calm',
       difficulty: '2/5',
       dates: 'по сезону',
       duration: '3 дня',
@@ -25,6 +60,7 @@ window.ACEROLA_EXPEDITION_DETAILS = {
       region: 'Россия / Приполярный Урал',
       label: 'Суперэкстрим',
       labelTone: 'open',
+      levelKey: 'peak',
       difficulty: '5/5',
       dates: 'декабрь — январь',
       duration: '7 дней',
@@ -46,6 +82,7 @@ window.ACEROLA_EXPEDITION_DETAILS = {
       region: 'Россия / Северный Урал',
       label: 'Насыщенный маршрут',
       labelTone: 'limited',
+      levelKey: 'rhythm',
       difficulty: '4/5',
       dates: 'зима',
       duration: '5 дней',
@@ -67,6 +104,7 @@ window.ACEROLA_EXPEDITION_DETAILS = {
       region: 'Россия / Коми',
       label: 'Флагманский маршрут',
       labelTone: 'flagship',
+      levelKey: 'peak',
       difficulty: '5/5',
       dates: 'декабрь — март',
       duration: '6 дней',
@@ -88,6 +126,7 @@ window.ACEROLA_EXPEDITION_DETAILS = {
       region: 'Россия / Арктика',
       label: 'Предзаказ',
       labelTone: 'order',
+      levelKey: 'peak',
       difficulty: '5/5',
       dates: 'по сезону',
       duration: '7 дней',
@@ -109,6 +148,7 @@ window.ACEROLA_EXPEDITION_DETAILS = {
       region: 'Россия / Урал',
       label: 'Набор открыт',
       labelTone: 'open',
+      levelKey: 'rhythm',
       difficulty: '2–4/5',
       dates: 'зима',
       duration: '2–3 дня',
@@ -130,6 +170,7 @@ window.ACEROLA_EXPEDITION_DETAILS = {
       region: 'Россия / по задаче',
       label: 'Private',
       labelTone: 'private',
+      levelKey: 'rhythm',
       difficulty: 'под задачу',
       dates: 'ваш график',
       duration: 'от 3 дней',

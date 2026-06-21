@@ -38,13 +38,6 @@ body.exp-page .dates-box {
   box-shadow: none !important;
 }
 
-body.exp-page .dossier-coordinates span {
-  padding: 0 !important;
-  color: rgba(6, 16, 26, .46) !important;
-  background: transparent !important;
-  border: 0 !important;
-}
-
 body.exp-page .bullet-grid {
   gap: 26px 34px !important;
 }

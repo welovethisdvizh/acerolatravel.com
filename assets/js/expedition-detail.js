@@ -17,7 +17,7 @@ const enhanceExpeditionDetailPage = () => {
     duration: 'по программе',
     seats: 'камерная группа',
     price: 'по запросу',
-    accent: 'EXPEDITION DOSSIER',
+    accent: 'EXPEDITION',
     image: '../assets/images/hero-snowmobile.png',
     routeLead: 'Маршрут экспедиции уточняется командой Acerola Travel.',
     routeMap: { label: 'Россия', pinX: 52, pinY: 48 },
@@ -488,8 +488,8 @@ const enhanceExpeditionDetailPage = () => {
               <strong>${escapeHtml(data.duration)}</strong>
             </div>
             <div>
-              <span>Код маршрута</span>
-              <strong>${escapeHtml(data.accent)}</strong>
+              <span>Формат</span>
+              <strong>${escapeHtml(data.label)}</strong>
             </div>
             <div>
               <span>Протяженность</span>
@@ -593,7 +593,6 @@ const enhanceExpeditionDetailPage = () => {
       badges.innerHTML = `
         <span class="dossier-status dossier-status-${data.labelTone}">Экспедиция</span>
         <span class="dossier-status dossier-status-${data.labelTone}">${data.label}</span>
-        <span class="dossier-status">${data.accent}</span>
       `;
       hero.querySelector('.crumbs')?.after(badges);
     }
@@ -623,16 +622,6 @@ const enhanceExpeditionDetailPage = () => {
     overviewCard.classList.add('dossier-overview-card');
     const overviewTitle = overviewCard.querySelector('h2');
     if (overviewTitle) overviewTitle.textContent = 'О маршруте';
-
-    if (!overviewCard.querySelector('.dossier-coordinates')) {
-      overviewCard.insertAdjacentHTML('beforeend', `
-        <div class="dossier-coordinates">
-          <span>${data.accent}</span>
-          <span>${data.region}</span>
-          <span>EXPEDITION DOSSIER</span>
-        </div>
-      `);
-    }
 
     const dateRows = overviewCard.querySelectorAll('.date-row');
     if (dateRows[0]?.querySelector('b')) dateRows[0].querySelector('b').textContent = data.dates;

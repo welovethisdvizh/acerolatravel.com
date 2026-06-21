@@ -1,5 +1,5 @@
 /* ==========================================================================
-   LAB-EXPEDITIONS - Editorial Dossiers & Lightbox Layout
+   LAB-EXPEDITIONS - Editorial Catalog & Lightbox Layout
    ========================================================================== */
 
 .lab-editorial-dossiers {
@@ -226,8 +226,80 @@
 .editorial-meta-line {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 14px;
   margin-bottom: 16px;
+}
+
+.expedition-level-pill {
+  --level-accent: #0077b6;
+  --level-ink: #06101a;
+  --level-bg: rgba(0, 119, 182, .06);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 31px;
+  padding: 6px 11px;
+  border: 1px solid color-mix(in srgb, var(--level-accent) 28%, transparent);
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--level-bg), rgba(255, 255, 255, .68));
+  color: var(--level-ink);
+  font-family: Manrope, sans-serif;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.expedition-level-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--level-accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--level-accent) 14%, transparent);
+}
+
+.expedition-level-pill span {
+  color: var(--level-accent);
+  font-size: .58rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.expedition-level-pill strong {
+  color: var(--level-ink);
+  font-size: .66rem;
+  font-weight: 900;
+  letter-spacing: .03em;
+  text-transform: none;
+}
+
+.level-calm {
+  --level-accent: #2f9fc8;
+  --level-ink: #075778;
+  --level-bg: rgba(47, 159, 200, .08);
+}
+
+.level-rhythm {
+  --level-accent: #0077b6;
+  --level-ink: #064b6a;
+  --level-bg: rgba(0, 119, 182, .08);
+}
+
+.expedition-level-pill.level-rhythm::before {
+  width: 16px;
+  height: 10px;
+  border-radius: 0;
+  background: var(--level-accent);
+  box-shadow: none;
+  clip-path: polygon(0 58%, 22% 58%, 34% 18%, 49% 82%, 62% 42%, 100% 42%, 100% 58%, 70% 58%, 56% 96%, 40% 34%, 30% 72%, 0 72%);
+  opacity: .9;
+}
+
+.level-peak {
+  --level-accent: #06101a;
+  --level-ink: #06101a;
+  --level-bg: rgba(6, 16, 26, .06);
 }
 
 .editorial-info-column h3 {
@@ -440,6 +512,15 @@
   
   .editorial-info-column h3 {
     font-size: 1.8rem;
+  }
+
+  .expedition-level-pill {
+    gap: 7px;
+    padding-inline: 10px;
+  }
+
+  .expedition-level-pill strong {
+    font-size: .62rem;
   }
   
   .editorial-desc {
