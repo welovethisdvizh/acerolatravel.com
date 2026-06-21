@@ -1,0 +1,174 @@
+
+body.exp-page.custom-page .suggestion-chip:first-child {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+}
+
+body.exp-page.custom-page .suggestion-chip:hover {
+  color: #ffffff !important;
+  background: #0077b6 !important;
+  border-color: #0077b6 !important;
+}
+
+body.exp-page.custom-page .city-autocomplete-hint {
+  display: block;
+  min-height: 20px;
+  margin-top: 9px;
+  color: #0077b6;
+  font: 800 .76rem/1.45 Manrope, Arial, sans-serif;
+  letter-spacing: .02em;
+}
+
+body.exp-page.custom-page .config-text-input:invalid {
+  border-color: rgba(191, 59, 46, .52) !important;
+  box-shadow: 0 0 0 4px rgba(191, 59, 46, .08) !important;
+}
+
+body.exp-page.custom-page .config-modal-overlay {
+  background: rgba(246, 249, 251, .78) !important;
+  backdrop-filter: blur(18px) saturate(120%) !important;
+  padding: 18px !important;
+}
+
+body.exp-page.custom-page .config-modal-card {
+  width: min(620px, 100%) !important;
+  max-width: 620px !important;
+  max-height: min(92vh, 780px) !important;
+  overflow: auto !important;
+  color: #06101a !important;
+  background: rgba(255, 255, 255, .96) !important;
+  border: 1px solid rgba(6, 16, 26, .12) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 34px 90px rgba(6, 16, 26, .18) !important;
+  padding: clamp(28px, 5vw, 48px) !important;
+  text-align: left !important;
+}
+
+body.exp-page.custom-page .config-modal-close {
+  top: 18px !important;
+  right: 18px !important;
+  width: 38px !important;
+  height: 38px !important;
+  display: grid !important;
+  place-items: center !important;
+  color: rgba(6, 16, 26, .56) !important;
+  background: rgba(6, 16, 26, .035) !important;
+  border: 1px solid rgba(6, 16, 26, .1) !important;
+  border-radius: 50% !important;
+  font-size: 1.55rem !important;
+}
+
+body.exp-page.custom-page .config-modal-close:hover {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+}
+
+body.exp-page.custom-page .config-modal-icon {
+  width: 62px !important;
+  height: 62px !important;
+  margin: 0 0 28px !important;
+  color: #0077b6 !important;
+  background: rgba(0, 119, 182, .08) !important;
+  border: 1px solid rgba(0, 119, 182, .28) !important;
+  box-shadow: none !important;
+}
+
+body.exp-page.custom-page .config-modal-card h3 {
+  max-width: 460px !important;
+  color: #06101a !important;
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-size: clamp(3rem, 7vw, 4.8rem) !important;
+  font-weight: 400 !important;
+  line-height: .95 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  margin: 0 0 18px !important;
+}
+
+body.exp-page.custom-page .modal-lead {
+  max-width: 520px !important;
+  color: rgba(6, 16, 26, .68) !important;
+  font-size: 1rem !important;
+  line-height: 1.68 !important;
+  margin: 0 0 26px !important;
+}
+
+body.exp-page.custom-page .modal-lead strong {
+  color: #06101a !important;
+  font-weight: 900 !important;
+}
+
+body.exp-page.custom-page .modal-divider {
+  background: rgba(6, 16, 26, .1) !important;
+  margin: 24px 0 !important;
+}
+
+body.exp-page.custom-page .modal-summary {
+  color: #06101a !important;
+  background: transparent !important;
+  border: 1px solid rgba(6, 16, 26, .1) !important;
+  border-width: 1px 0 !important;
+  border-radius: 0 !important;
+  padding: 18px 0 !important;
+  margin: 0 0 28px !important;
+}
+
+body.exp-page.custom-page .modal-summary h4 {
+  color: #0077b6 !important;
+  font-size: .76rem !important;
+  letter-spacing: .1em !important;
+}
+
+body.exp-page.custom-page .modal-summary ul {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+}
+
+body.exp-page.custom-page .modal-summary li {
+  display: grid !important;
+  gap: 4px !important;
+  color: rgba(6, 16, 26, .48) !important;
+  border-top: 1px solid rgba(6, 16, 26, .08) !important;
+  padding: 12px 14px 12px 0 !important;
+  font-size: .8rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .04em !important;
+}
+
+body.exp-page.custom-page .modal-summary li strong {
+  color: #06101a !important;
+  font-size: .98rem !important;
+  font-weight: 900 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+body.exp-page.custom-page .modal-action-btn {
+  width: 100% !important;
+  min-height: 54px !important;
+  color: #ffffff !important;
+  background: #06101a !important;
+  border: 1px solid #06101a !important;
+  border-radius: 999px !important;
+  box-shadow: 0 18px 38px rgba(6, 16, 26, .14) !important;
+}
+
+body.exp-page.custom-page .modal-action-btn:hover {
+  color: #06101a !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 560px) {
+  body.exp-page.custom-page .modal-summary ul {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.exp-page.custom-page .config-modal-card {
+    padding: 28px 22px !important;
+  }
+}

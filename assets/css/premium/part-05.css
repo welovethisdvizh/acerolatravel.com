@@ -1,0 +1,259 @@
+
+/* V18 - calmer primary buttons for the home page */
+body.lab-home .btn,
+body.lab-home .lab-btn,
+body.lab-home .btn-navy,
+body.lab-home .btn-wood,
+body.lab-home .btn-dark,
+body.lab-home .editorial-cta-btn,
+body.lab-home .lab-lead-form .btn,
+body.lab-home .mobile-cta .btn {
+  min-height: 52px !important;
+  padding: 14px 28px !important;
+  color: #ffffff !important;
+  background: #06101a !important;
+  border: 1px solid #06101a !important;
+  border-radius: 999px !important;
+  box-shadow: 0 14px 30px rgba(6, 16, 26, .12) !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+}
+
+body.lab-home .btn:hover,
+body.lab-home .lab-btn:hover,
+body.lab-home .btn-navy:hover,
+body.lab-home .btn-wood:hover,
+body.lab-home .btn-dark:hover,
+body.lab-home .editorial-cta-btn:hover,
+body.lab-home .lab-lead-form .btn:hover,
+body.lab-home .mobile-cta .btn:hover {
+  color: #ffffff !important;
+  background: #0d1c2b !important;
+  border-color: #0d1c2b !important;
+  box-shadow: 0 18px 38px rgba(6, 16, 26, .18) !important;
+  transform: translateY(-2px) !important;
+}
+
+body.lab-home .btn-light,
+body.lab-home .btn-ghost,
+body.lab-home .lab-btn-secondary,
+body.lab-home .btn-text {
+  min-height: 52px !important;
+  padding: 14px 24px !important;
+  color: #06101a !important;
+  background: rgba(255, 255, 255, .88) !important;
+  border: 1px solid rgba(6, 16, 26, .18) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+}
+
+body.lab-home .btn-light:hover,
+body.lab-home .btn-ghost:hover,
+body.lab-home .lab-btn-secondary:hover,
+body.lab-home .btn-text:hover {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+  box-shadow: 0 16px 34px rgba(6, 16, 26, .14) !important;
+  transform: translateY(-2px) !important;
+}
+
+body.lab-home .btn-text::after {
+  display: none !important;
+}
+
+body.lab-home .hero-ref-actions {
+  gap: 14px !important;
+}
+
+body.lab-home .hero-ref-actions .btn-text {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body.lab-home .format-cta {
+  min-height: 38px !important;
+  padding: 9px 18px !important;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, .08) !important;
+  border: 1px solid rgba(255, 255, 255, .38) !important;
+  box-shadow: none !important;
+}
+
+body.lab-home .format-cta:hover {
+  color: #06101a !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+body.lab-home .site-footer .btn,
+body.lab-home .lab-contact-card .btn {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+}
+
+/* V21 - CardsParallax-style scenario cards without CTA buttons */
+body.lab-home .lab-formats {
+  overflow: visible !important;
+}
+
+body.lab-home .lab-format-grid {
+  display: block !important;
+  width: min(760px, 100%) !important;
+  margin: clamp(34px, 6vw, 70px) auto 0 !important;
+}
+
+body.lab-home .lab-format-card {
+  position: sticky !important;
+  top: 96px !important;
+  width: min(700px, 100%) !important;
+  min-height: min(64vh, 470px) !important;
+  height: min(64vh, 470px) !important;
+  margin: 0 auto clamp(120px, 26vh, 260px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #06101a !important;
+  box-shadow: 0 28px 72px rgba(6, 16, 26, .16) !important;
+  transform: none !important;
+}
+
+body.lab-home .lab-format-card:last-child {
+  margin-bottom: clamp(40px, 12vh, 120px) !important;
+}
+
+body.lab-home .lab-format-card:hover {
+  transform: none !important;
+  box-shadow: 0 34px 84px rgba(6, 16, 26, .2) !important;
+}
+
+body.lab-home .lab-format-card img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  filter: saturate(.78) brightness(.64) contrast(1.04) !important;
+  transform: scale(1.01) !important;
+}
+
+body.lab-home .lab-format-card:hover img {
+  transform: scale(1.035) !important;
+}
+
+body.lab-home .lab-format-card::after {
+  opacity: 1 !important;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 255, 255, .08), transparent 42%),
+    linear-gradient(180deg, rgba(3, 7, 13, .18) 0%, rgba(3, 7, 13, .42) 48%, rgba(3, 7, 13, .84) 100%) !important;
+}
+
+body.lab-home .lab-format-card .lab-format-content {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 620px !important;
+  min-height: auto !important;
+  padding: clamp(28px, 5vw, 52px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  pointer-events: auto !important;
+}
+
+body.lab-home .lab-format-card .format-num {
+  margin-bottom: 18px !important;
+  color: #eadb9d !important;
+  font: 900 .72rem/1.1 Manrope, Arial, sans-serif !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .18) !important;
+}
+
+body.lab-home .lab-format-card h3 {
+  max-width: 560px !important;
+  margin: 0 auto 18px !important;
+  color: #ffffff !important;
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-size: clamp(3rem, 6vw, 5.2rem) !important;
+  font-weight: 400 !important;
+  line-height: .94 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  text-shadow: 0 10px 34px rgba(0, 0, 0, .34) !important;
+}
+
+body.lab-home .lab-format-card .format-meta-list {
+  width: min(520px, 100%) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: grid !important;
+  gap: 6px !important;
+  list-style: none !important;
+}
+
+body.lab-home .lab-format-card .format-meta-list li,
+body.lab-home .lab-format-card .format-meta-list li strong {
+  color: rgba(255, 255, 255, .88) !important;
+  font: 700 clamp(.86rem, 1.3vw, 1rem)/1.48 Manrope, Arial, sans-serif !important;
+  text-align: center !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .38) !important;
+}
+
+body.lab-home .lab-format-card .format-meta-list li strong {
+  font-weight: 900 !important;
+}
+
+body.lab-home .lab-format-card .format-cta {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  body.lab-home .lab-format-grid {
+    width: 100% !important;
+  }
+
+  body.lab-home .lab-format-card {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: 440px !important;
+    margin-bottom: 22px !important;
+  }
+
+  body.lab-home .lab-format-card h3 {
+    font-size: clamp(2.7rem, 12vw, 4.1rem) !important;
+  }
+}
+/* Telegram lead status */
+.lead-form .lead-form-status {
+  grid-column: 1 / -1;
+  display: block;
+  color: rgba(6, 16, 26, .58);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.contact-card .lead-form-status,
+.lab-contact-card .lead-form-status {
+  color: rgba(255, 255, 255, .68);
+}
+
+.lead-form .lead-form-status.is-success {
+  color: #0077b6;
+}
+
+.lead-form .lead-form-status.is-error {
+  color: #b42318;
+}

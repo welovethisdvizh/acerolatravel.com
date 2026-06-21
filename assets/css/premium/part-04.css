@@ -1,0 +1,564 @@
+
+@media (max-width: 520px) {
+  body.lab-home h1.hero-ref-title {
+    font-size: 3.55rem !important;
+  }
+
+  body.lab-home .hero-ref-title-script {
+    font-size: 3.15rem !important;
+  }
+
+  body.lab-home .hero-ref-actions .btn,
+  body.lab-home .hero-ref-actions .btn-text {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* V15 - transparent button system */
+body.lab-home .btn,
+body.lab-home .lab-btn,
+body.lab-home .btn-navy,
+body.lab-home .btn-wood,
+body.lab-home .btn-light,
+body.lab-home .btn-dark,
+body.lab-home .btn-ghost,
+body.lab-home .editorial-cta-btn,
+body.lab-home .format-cta,
+body.lab-home .mobile-cta .btn {
+  color: #06101a !important;
+  background: transparent !important;
+  border: 1px solid rgba(6, 16, 26, .48) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transition:
+    color .28s ease,
+    background-color .28s ease,
+    border-color .28s ease,
+    box-shadow .28s ease,
+    transform .25s ease !important;
+}
+
+body.lab-home .btn:hover,
+body.lab-home .lab-btn:hover,
+body.lab-home .btn-navy:hover,
+body.lab-home .btn-wood:hover,
+body.lab-home .btn-light:hover,
+body.lab-home .btn-dark:hover,
+body.lab-home .btn-ghost:hover,
+body.lab-home .editorial-cta-btn:hover,
+body.lab-home .format-cta:hover,
+body.lab-home .mobile-cta .btn:hover {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+  box-shadow: 0 16px 36px rgba(6, 16, 26, .16) !important;
+}
+
+body.lab-home .dark .btn,
+body.lab-home .catalog-section .btn,
+body.lab-home .contact-card .btn,
+body.lab-home .lab-contact-card .btn,
+body.lab-home .site-footer .btn {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, .58) !important;
+}
+
+body.lab-home .dark .btn:hover,
+body.lab-home .catalog-section .btn:hover,
+body.lab-home .contact-card .btn:hover,
+body.lab-home .lab-contact-card .btn:hover,
+body.lab-home .site-footer .btn:hover {
+  color: #06101a !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 16px 38px rgba(255, 255, 255, .16) !important;
+}
+
+body.lab-home .btn::after,
+body.lab-home .lab-btn::after {
+  opacity: .55;
+}
+
+/* V16 - quiet white editorial aesthetic */
+:root {
+  --aesthetic-paper: #ffffff;
+  --aesthetic-ink: #06101a;
+  --aesthetic-muted: rgba(6, 16, 26, .62);
+  --aesthetic-soft: rgba(6, 16, 26, .42);
+  --aesthetic-line: rgba(6, 16, 26, .1);
+  --aesthetic-line-strong: rgba(6, 16, 26, .18);
+  --aesthetic-blue: #0077b6;
+  --aesthetic-gold: #989477;
+  --aesthetic-shadow: 0 18px 52px rgba(6, 16, 26, .035);
+}
+
+body.lab-home {
+  --lab-bg: var(--aesthetic-paper);
+  --lab-text: var(--aesthetic-ink);
+  --lab-muted: var(--aesthetic-muted);
+  --lab-soft: var(--aesthetic-soft);
+  --lab-panel: rgba(6, 16, 26, .025);
+  --lab-panel-strong: rgba(6, 16, 26, .045);
+  --lab-line: var(--aesthetic-line);
+  --lab-line-strong: var(--aesthetic-line-strong);
+  --lab-cyan: var(--aesthetic-blue);
+  --lab-blue: var(--aesthetic-blue);
+  --lab-gold: var(--aesthetic-gold);
+  --lab-radius: 8px;
+  background: #ffffff !important;
+  color: var(--aesthetic-ink);
+}
+
+body.lab-home::before,
+body.lab-home::after {
+  display: none !important;
+}
+
+body.lab-home main,
+body.lab-home .section,
+body.lab-home .section-tight,
+body.lab-home main > section:not(.hero-reference) {
+  background: #ffffff !important;
+}
+
+body.lab-home .section,
+body.lab-home .section-tight {
+  border-top: 1px solid rgba(6, 16, 26, .045);
+}
+
+body.lab-home .lab-kicker,
+body.lab-home .eyebrow,
+body.lab-home .lab-card-region,
+body.lab-home .editorial-meta-line,
+body.lab-home .lab-card-code,
+body.lab-home .lab-status {
+  color: var(--aesthetic-blue) !important;
+  letter-spacing: .11em !important;
+}
+
+body.lab-home .lab-kicker::before,
+body.lab-home .eyebrow::before {
+  background: var(--aesthetic-blue) !important;
+}
+
+body.lab-home h2,
+body.lab-home h3,
+body.lab-home .lab-about-copy h2,
+body.lab-home .lab-section-head h2,
+body.lab-home .lab-contact-copy h2,
+body.lab-home .editorial-info-column h3,
+body.lab-home .lab-card-body h3,
+body.lab-home .lab-format-card h3,
+body.lab-home .lab-review-card h3,
+body.lab-home .lab-glass-card h3 {
+  color: var(--aesthetic-ink) !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 400 !important;
+  letter-spacing: .01em !important;
+  line-height: 1.04 !important;
+  text-transform: none !important;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+body.lab-home .lab-about-copy h2,
+body.lab-home .lab-section-head h2,
+body.lab-home .lab-contact-copy h2 {
+  font-size: clamp(3rem, 5.4vw, 5.8rem) !important;
+}
+
+body.lab-home .editorial-info-column h3,
+body.lab-home .lab-card-body h3,
+body.lab-home .lab-format-card h3,
+body.lab-home .lab-review-card h3,
+body.lab-home .lab-glass-card h3 {
+  font-size: clamp(2rem, 3vw, 3.35rem) !important;
+}
+
+body.lab-home p,
+body.lab-home .lead,
+body.lab-home .muted,
+body.lab-home .editorial-desc,
+body.lab-home .lab-card-body p {
+  color: var(--aesthetic-muted) !important;
+  font-weight: 400;
+  line-height: 1.72;
+}
+
+body.lab-home .lab-about-card,
+body.lab-home .lab-glass-card,
+body.lab-home .lab-format-card,
+body.lab-home .lab-review-card,
+body.lab-home .lab-contact-card,
+body.lab-home .lab-about-cta,
+body.lab-home .editorial-image-wrapper,
+body.lab-home .lab-route-card,
+body.lab-home .lab-card-footer-bar,
+body.lab-home .lab-stats-grid,
+body.lab-home .contact-card,
+body.lab-home .info-card,
+body.lab-home .faq-item {
+  background: rgba(255, 255, 255, .94) !important;
+  border: 1px solid var(--aesthetic-line) !important;
+  border-radius: 8px !important;
+  box-shadow: var(--aesthetic-shadow) !important;
+}
+
+body.lab-home .lab-route-card::before,
+body.lab-home .lab-format-card::before,
+body.lab-home .lab-contact::before,
+body.lab-home .lab-about::before,
+body.lab-home .lab-about::after {
+  opacity: .04 !important;
+}
+
+body.lab-home .lab-route-card img,
+body.lab-home .editorial-main-img,
+body.lab-home .lab-about-image,
+body.lab-home .lab-about-image img,
+body.lab-home .lab-format-card img {
+  border-radius: 8px !important;
+  filter: saturate(.72) contrast(.96) brightness(1.05) !important;
+}
+
+body.lab-home .lab-status,
+body.lab-home .lab-card-code,
+body.lab-home .lab-card-facts,
+body.lab-home .lab-route-card-wide .lab-card-facts,
+body.lab-home .lab-fact-item,
+body.lab-home .lab-stat,
+body.lab-home .lab-format-meta span {
+  background: transparent !important;
+  border-color: var(--aesthetic-line) !important;
+  box-shadow: none !important;
+}
+
+body.lab-home input,
+body.lab-home select,
+body.lab-home textarea,
+body.lab-home .lead-form input,
+body.lab-home .lead-form select,
+body.lab-home .lead-form textarea {
+  color: var(--aesthetic-ink) !important;
+  background: #ffffff !important;
+  border-color: var(--aesthetic-line-strong) !important;
+  border-radius: 8px !important;
+}
+
+body.lab-home input:focus,
+body.lab-home select:focus,
+body.lab-home textarea:focus {
+  border-color: rgba(6, 16, 26, .34) !important;
+  box-shadow: 0 0 0 4px rgba(6, 16, 26, .045) !important;
+}
+
+body.lab-home .site-footer {
+  color: var(--aesthetic-ink) !important;
+  background: #ffffff !important;
+  border-top: 1px solid var(--aesthetic-line) !important;
+}
+
+body.lab-home .site-footer p,
+body.lab-home .site-footer a {
+  color: var(--aesthetic-muted) !important;
+}
+
+body.lab-home .contact-card .btn,
+body.lab-home .lab-contact-card .btn,
+body.lab-home .site-footer .btn {
+  color: var(--aesthetic-ink) !important;
+  border-color: rgba(6, 16, 26, .48) !important;
+}
+
+body.lab-home .contact-card .btn:hover,
+body.lab-home .lab-contact-card .btn:hover,
+body.lab-home .site-footer .btn:hover {
+  color: #ffffff !important;
+  background: var(--aesthetic-ink) !important;
+  border-color: var(--aesthetic-ink) !important;
+}
+
+body.lab-home .lab-about-image::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 62%, rgba(255, 255, 255, .72) 100%) !important;
+}
+
+body.lab-home .lab-about-badge {
+  color: var(--aesthetic-ink) !important;
+  background: rgba(255, 255, 255, .84) !important;
+  border: 1px solid var(--aesthetic-line) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 14px 36px rgba(6, 16, 26, .08) !important;
+  backdrop-filter: blur(14px) saturate(120%) !important;
+}
+
+/* V17 - frameless editorial cleanup */
+body.lab-home .lab-about-card,
+body.lab-home .lab-glass-card,
+body.lab-home .lab-review-card,
+body.lab-home .lab-contact-card,
+body.lab-home .lab-about-cta,
+body.lab-home .lab-card-footer-bar,
+body.lab-home .lab-stats-grid,
+body.lab-home .contact-card,
+body.lab-home .info-card,
+body.lab-home .faq-item {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.lab-home .lab-glass-card,
+body.lab-home .lab-review-card {
+  min-height: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+body.lab-home .lab-glass-card:hover,
+body.lab-home .lab-review-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+body.lab-home .lab-glass-card svg {
+  color: var(--aesthetic-blue) !important;
+  margin-bottom: 34px;
+}
+
+body.lab-home .lab-glass-card h3,
+body.lab-home .lab-review-card h3,
+body.lab-home .lab-about-card h3,
+body.lab-home .lab-card-body h3,
+body.lab-home .editorial-info-column h3 {
+  color: var(--aesthetic-ink) !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: clamp(1.05rem, 1.25vw, 1.35rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.32 !important;
+}
+
+body.lab-home .lab-glass-card p,
+body.lab-home .lab-review-card p,
+body.lab-home .lab-about-card p,
+body.lab-home .lab-card-body p {
+  color: rgba(6, 16, 26, .62) !important;
+  line-height: 1.64 !important;
+}
+
+body.lab-home .lab-route-card,
+body.lab-home .editorial-image-wrapper,
+body.lab-home .lab-format-card {
+  border: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+body.lab-home .lab-route-card {
+  background: transparent !important;
+}
+
+body.lab-home .lab-format-card {
+  background: #07111d !important;
+  color: #ffffff !important;
+  min-height: clamp(440px, 34vw, 500px) !important;
+}
+
+body.lab-home .lab-format-card::after {
+  opacity: 1 !important;
+  background:
+    linear-gradient(180deg, rgba(3, 7, 13, .06) 0%, rgba(3, 7, 13, .24) 38%, rgba(3, 7, 13, .9) 100%) !important;
+}
+
+body.lab-home .lab-format-card img {
+  filter: saturate(.78) brightness(.68) contrast(1.02) !important;
+}
+
+body.lab-home .lab-format-card .lab-format-content,
+body.lab-home .lab-format-card .lab-format-content * {
+  z-index: 3;
+}
+
+body.lab-home .lab-format-card .lab-format-content {
+  position: absolute !important;
+  inset: auto 24px 26px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  pointer-events: none !important;
+}
+
+body.lab-home .lab-format-card .lab-format-content * {
+  position: relative;
+}
+
+body.lab-home .lab-format-card .format-num,
+body.lab-home .lab-format-card span,
+body.lab-home .lab-format-card h3,
+body.lab-home .lab-format-card p,
+body.lab-home .lab-format-card li,
+body.lab-home .lab-format-card strong {
+  color: #ffffff !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
+}
+
+body.lab-home .lab-format-card .format-num,
+body.lab-home .lab-format-card span {
+  color: #d8c895 !important;
+  text-shadow: none;
+}
+
+body.lab-home .lab-format-card h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(1.9rem, 2.45vw, 2.9rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.02 !important;
+}
+
+body.lab-home .format-meta-list {
+  gap: 5px !important;
+  margin-bottom: 16px !important;
+}
+
+body.lab-home .format-meta-list li,
+body.lab-home .format-meta-list li strong {
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .84rem !important;
+  line-height: 1.45 !important;
+}
+
+body.lab-home .format-cta {
+  min-height: 36px !important;
+  padding: 8px 16px !important;
+  align-self: flex-start !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, .46) !important;
+  pointer-events: auto !important;
+}
+
+body.lab-home .format-cta:hover {
+  color: #06101a !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+body.lab-home .lab-stats-grid {
+  gap: 26px;
+  overflow: visible !important;
+}
+
+body.lab-home .lab-stats-grid > div {
+  border: 0 !important;
+  padding-left: 0 !important;
+}
+
+body.lab-home .lab-review-grid {
+  gap: clamp(28px, 4vw, 56px) !important;
+}
+
+body.lab-home .lab-review-card {
+  position: relative;
+  padding: 0 0 30px !important;
+  min-height: 0 !important;
+}
+
+body.lab-home .lab-review-card::before {
+  content: "АК" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 58px !important;
+  height: 58px !important;
+  display: grid !important;
+  place-items: center !important;
+  color: #06101a !important;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, rgba(6, 16, 26, .48), rgba(0, 119, 182, .34), rgba(152, 148, 119, .38)) border-box !important;
+  border: 1px solid transparent !important;
+  border-radius: 50% !important;
+  box-shadow: 0 12px 32px rgba(6, 16, 26, .055) !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .76rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .1em !important;
+  line-height: 1 !important;
+}
+
+body.lab-home .lab-review-card:nth-child(2)::before {
+  content: "МС" !important;
+}
+
+body.lab-home .lab-review-card:nth-child(3)::before {
+  content: "DR" !important;
+}
+
+body.lab-home .lab-review-card::after {
+  content: "“";
+  position: absolute;
+  top: -16px;
+  right: 0;
+  color: rgba(0, 119, 182, .08);
+  font-family: Georgia, serif;
+  font-size: 6.5rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+body.lab-home img.lab-avatar,
+body.lab-home .lab-avatar {
+  display: block !important;
+  width: 58px !important;
+  height: 58px !important;
+  margin: 0 0 34px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+body.lab-home .lab-review-card p {
+  margin-top: 0 !important;
+  max-width: 34ch;
+  color: rgba(6, 16, 26, .66) !important;
+  font-size: clamp(1rem, 1.2vw, 1.12rem) !important;
+  line-height: 1.72 !important;
+}
+
+body.lab-home .lab-review-card strong {
+  margin-top: 26px !important;
+  color: #06101a !important;
+  font-size: .98rem !important;
+  font-weight: 800 !important;
+}
+
+body.lab-home .lab-review-card span {
+  color: rgba(6, 16, 26, .42) !important;
+  font-size: .82rem !important;
+}
+
+@media (max-width: 720px) {
+  html {
+    scroll-padding-top: 92px;
+  }
+
+  body.lab-home section[id] {
+    scroll-margin-top: 92px;
+  }
+
+  body.lab-home .lab-review-grid {
+    gap: 34px !important;
+  }
+
+  body.lab-home .lab-review-card {
+    padding-bottom: 34px !important;
+    border-bottom: 1px solid rgba(6, 16, 26, .08) !important;
+  }
+
+  body.lab-home .lab-review-card:last-child {
+    border-bottom: 0 !important;
+  }
+}

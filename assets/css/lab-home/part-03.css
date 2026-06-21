@@ -1,0 +1,247 @@
+
+body.lab-home .format-cta:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0b1420;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+body.lab-home .lab-format-card:hover img {
+  transform: scale(1.06);
+  filter: saturate(.86) brightness(.7);
+}
+
+body.lab-home .lab-route-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.84) contrast(1.05) brightness(.74);
+  transform: scale(1.01);
+  transition: transform 1.1s cubic-bezier(.2, .75, .2, 1), filter .45s ease;
+}
+
+/* Frosted glass overlay for frozen compass */
+body.lab-home .lab-compass-frost-overlay {
+  fill: rgba(230, 245, 255, 0);
+  stroke: rgba(255, 255, 255, 0);
+  stroke-width: 3;
+  backdrop-filter: blur(0px);
+  transition: fill 0.4s ease, stroke 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+body.lab-home .lab-beacon-shell.is-frozen .lab-compass-frost-overlay {
+  fill: rgba(200, 235, 255, 0.38);
+  stroke: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+/* Make coordinates bezel rotate slower or do nice frost feedback */
+body.lab-home .lab-beacon-shell.is-frozen .lab-beacon-windrose {
+  animation-duration: 220s;
+}
+
+/* Sluggish feedback transition on the needle group itself */
+body.lab-home .lab-beacon-shell.is-frozen .lab-beacon-needle-group {
+  filter: drop-shadow(0 4px 10px rgba(0, 150, 199, 0.15)) blur(0.5px);
+}
+
+
+/* ==========================================================================
+   V13 - PREMIUM WINTER HERO DESIGN & COMPASS REALISM OVERRIDES
+   ========================================================================== */
+
+/* Dark, deep winter polar night background gradient - REVERTED TO LIGHT GRADIENT */
+body.lab-home .lab-hero::before,
+body.home.lab-home .hero-styled::before {
+  background:
+    radial-gradient(circle at 75% 30%, rgba(0, 150, 199, 0.14), transparent 32rem),
+    radial-gradient(circle at 20% 70%, rgba(255, 94, 0, 0.12), transparent 28rem),
+    linear-gradient(90deg, rgba(245, 248, 250, 0.98) 0%, rgba(245, 248, 250, 0.8) 45%, rgba(238, 243, 247, 0.3) 100%) !important;
+}
+
+/* Make image background opacity back to original */
+body.lab-home .lab-hero-media {
+  opacity: 0.54 !important;
+}
+
+/* Revert title text gradient to original navy-blue-gold */
+body.lab-home .lab-hero-title {
+  background: linear-gradient(135deg, #0b1420 15%, var(--lab-blue) 55%, var(--lab-gold) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, .05) !important;
+}
+
+/* Revert lead text color to original */
+body.lab-home .lab-hero-lead {
+  color: var(--lab-muted) !important;
+  text-shadow: none !important;
+}
+
+/* Topographical map background lines - dark grey for light theme */
+body.lab-home .lab-hero-topo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('../../images/topo_pattern.png');
+  background-size: 800px auto;
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* HUD / Telemetry stats in the background - dark grey/navy for light theme */
+body.lab-home .lab-hero-telemetry {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  font-family: monospace;
+  font-size: 0.72rem;
+  color: rgba(11, 21, 32, 0.28);
+  opacity: 1;
+  letter-spacing: 0.12em;
+  padding: 110px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+body.lab-home .telemetry-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body.lab-home .telemetry-block.block-left {
+  text-align: left;
+}
+body.lab-home .telemetry-block.block-right {
+  text-align: right;
+}
+
+/* Compass Light Glassmorphism Core - RESTORED TO LIGHT DISC */
+body.lab-home .lab-beacon-core {
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.98), rgba(242, 247, 251, 0.96)) !important;
+  border: 1px solid rgba(0, 119, 182, 0.16) !important;
+  box-shadow:
+    inset 0 0 44px rgba(255, 255, 255, 0.9),
+    inset 0 0 20px rgba(0, 119, 182, 0.04),
+    0 24px 64px rgba(11, 21, 32, 0.05) !important;
+}
+
+body.lab-home .lab-beacon-core::before {
+  opacity: 0.54 !important;
+}
+
+body.lab-home .lab-beacon-bezel {
+  stroke: rgba(0, 119, 182, 0.12) !important;
+}
+
+/* Bezel rotation animation */
+body.lab-home .lab-beacon-ticks {
+  stroke: rgba(0, 119, 182, 0.22) !important;
+  animation: spinBezel 120s linear infinite;
+  transform-origin: 210px 210px;
+}
+@keyframes spinBezel {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body.lab-home .lab-beacon-ring {
+  stroke: rgba(0, 119, 182, 0.08) !important;
+  transition: stroke 0.3s ease, filter 0.3s ease;
+}
+
+body.lab-home .lab-planet-stage:hover .lab-beacon-ring {
+  stroke: rgba(0, 150, 199, 0.45) !important;
+  filter: drop-shadow(0 0 3px rgba(0, 150, 199, 0.25));
+}
+
+body.lab-home .lab-beacon-ring-soft {
+  stroke: rgba(0, 119, 182, 0.05) !important;
+}
+
+body.lab-home .lab-beacon-ring-softer {
+  stroke: rgba(0, 119, 182, 0.03) !important;
+}
+
+/* Direction letters: N, S, E, W styling and active state glow - RESTORED TO NAVY / BLUE GLOW */
+body.lab-home .lab-beacon-label-dir {
+  fill: #0b1420 !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  transition: fill 0.3s ease, filter 0.3s ease, font-size 0.3s ease;
+}
+
+body.lab-home .lab-beacon-label-dir.is-active {
+  fill: #0096c7 !important;
+  filter: drop-shadow(0 0 4px rgba(0, 150, 199, 0.6)) !important;
+  font-size: 16px !important;
+}
+
+body.lab-home .lab-beacon-label-coord {
+  fill: rgba(11, 21, 32, 0.38) !important;
+}
+
+/* Windrose Facet Colors */
+body.lab-home .facet-light {
+  fill: rgba(255, 255, 255, 0.95) !important;
+}
+body.lab-home .facet-dark {
+  fill: rgba(162, 210, 255, 0.35) !important;
+}
+body.lab-home .facet-sub-light {
+  fill: rgba(255, 255, 255, 0.75) !important;
+}
+body.lab-home .facet-sub-dark {
+  fill: rgba(0, 119, 182, 0.12) !important;
+}
+
+/* Needle and float hover glow effects */
+body.lab-home .lab-beacon-needle-group {
+  filter: drop-shadow(0 8px 18px rgba(11, 21, 32, 0.12)) !important;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1.12), filter 0.3s ease !important;
+}
+body.lab-home .lab-planet-stage:hover .lab-beacon-needle-group {
+  filter: drop-shadow(0 12px 24px rgba(0, 150, 199, 0.4)) !important;
+}
+
+/* Needle colors */
+body.lab-home .lab-needle-north.facet-light {
+  fill: #0077b6 !important;
+}
+body.lab-home .lab-needle-north.facet-dark {
+  fill: #00b4d8 !important;
+}
+body.lab-home .lab-needle-south.facet-light {
+  fill: #d5aa6b !important;
+}
+body.lab-home .lab-needle-south.facet-dark {
+  fill: #a87835 !important;
+}
+body.lab-home .lab-needle-cap {
+  fill: #ffffff !important;
+  stroke: #0b1420 !important;
+  stroke-width: 1.5 !important;
+}
+body.lab-home .lab-needle-cap-inner {
+  fill: #0096c7 !important;
+}
+
+/* 3D tilt tracking transition */
+body.lab-home .lab-beacon-shell {
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+body.lab-home .lab-beacon-core {
+  transform: translateZ(20px);
+}
+body.lab-home .lab-beacon-needle-group {
+  transform: translateZ(40px);
+}
+
+/* Redesigned expeditions section moved to assets/css/lab-expeditions.css */

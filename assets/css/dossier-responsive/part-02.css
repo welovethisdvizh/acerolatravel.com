@@ -1,0 +1,560 @@
+
+@media (max-width: 720px) {
+  body.exp-page .container,
+  body.exp-page .subnav .container {
+    width: calc(100% - 28px);
+  }
+
+  body.exp-page .section {
+    padding: 66px 0;
+  }
+
+  body.exp-page .section-tight {
+    padding: 62px 0;
+  }
+
+  body.exp-page .header-inner,
+  body.exp-page .site-header.is-scrolled .header-inner {
+    height: 68px;
+    width: calc(100% - 28px);
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+  }
+
+  body.exp-page .brand img,
+  body.exp-page .footer-brand img {
+    width: 58px;
+    height: 42px;
+  }
+
+  body.exp-page .header-actions .btn {
+    display: none;
+  }
+
+  body.exp-page .main-nav.is-open {
+    top: 72px;
+    left: 14px;
+    right: 14px;
+  }
+
+  body.exp-page .dossier-hero,
+  body.exp-page .exp-hero {
+    min-height: 88svh;
+    padding: 104px 0 46px;
+  }
+
+  body.exp-page .exp-hero h1 {
+    font-size: clamp(2.8rem, 14vw, 4.2rem);
+  }
+
+  body.exp-page .exp-hero .lead,
+  body.exp-page .lead {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  body.exp-page .exp-hero-actions .btn,
+  body.exp-page .lead-form .btn,
+  body.exp-page .dossier-booking .btn {
+    width: 100%;
+  }
+
+  body.exp-page .quick-facts,
+  body.exp-page .bullet-grid,
+  body.exp-page .dates-box,
+  body.exp-page .expedition-experience-grid,
+  body.exp-page .expedition-atmosphere-grid,
+  body.exp-page .dossier-fit-grid,
+  body.exp-page .comfort-grid,
+  body.exp-page .included-grid,
+  body.exp-page .guides,
+  body.exp-page .lead-form {
+    grid-template-columns: 1fr;
+  }
+
+  body.exp-page .expedition-experience-card {
+    min-height: 360px;
+  }
+
+  body.exp-page .expedition-atmosphere-grid {
+    grid-auto-rows: 220px;
+  }
+
+  body.exp-page .expedition-atmosphere-grid figure.is-large {
+    grid-column: auto;
+    grid-row: span 1;
+  }
+
+  body.exp-page .overview-card,
+  body.exp-page .dossier-booking,
+  body.exp-page .route-info,
+  body.exp-page .expedition-route-card,
+  body.exp-page .expedition-route-detail,
+  body.exp-page .expedition-atmosphere-copy,
+  body.exp-page .contact-card {
+    padding: 22px;
+  }
+
+  body.exp-page .expedition-route-map-scroll {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-color: rgba(0, 150, 199, .4) #f5f8fa;
+  }
+
+  body.exp-page .expedition-route-map {
+    min-width: 720px;
+    min-height: 420px;
+  }
+
+  body.exp-page .expedition-route-transport span {
+    display: none;
+  }
+
+  body.exp-page .expedition-route-stop {
+    width: 46px;
+    height: 46px;
+  }
+
+  body.exp-page .expedition-route-extra,
+  body.exp-page .expedition-route-region {
+    grid-template-columns: 1fr;
+  }
+
+  body.exp-page .route-visual {
+    min-height: 330px;
+  }
+
+  body.exp-page .contact-card h2,
+  body.exp-page .overview-card h2,
+  body.exp-page .page-title-row h2,
+  body.exp-page #faq h2 {
+    font-size: 2.35rem;
+  }
+
+  body.exp-page .subnav {
+    top: 68px;
+  }
+
+  body.exp-page .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  body.exp-page .dossier-hero-badges {
+    gap: 8px;
+  }
+
+  body.exp-page .dossier-status {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  body.exp-page .exp-hero h1 {
+    font-size: 2.65rem;
+  }
+
+  body.exp-page .dossier-booking h3,
+  body.exp-page .route-info h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.exp-page *,
+  body.exp-page *::before,
+  body.exp-page *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Transparent CTA system for expedition pages */
+body.exp-page .btn,
+body.exp-page .btn-wood,
+body.exp-page .btn-light,
+body.exp-page .btn-dark,
+body.exp-page .btn-ghost,
+body.exp-page .mobile-cta .btn,
+body.exp-page .modal-action-btn,
+body.exp-page .sidebar-action-btn {
+  color: #06101a !important;
+  background: transparent !important;
+  border: 1px solid rgba(6, 16, 26, .48) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transition:
+    color .28s ease,
+    background-color .28s ease,
+    border-color .28s ease,
+    box-shadow .28s ease,
+    transform .25s ease !important;
+}
+
+body.exp-page .btn:hover,
+body.exp-page .btn-wood:hover,
+body.exp-page .btn-light:hover,
+body.exp-page .btn-dark:hover,
+body.exp-page .btn-ghost:hover,
+body.exp-page .mobile-cta .btn:hover,
+body.exp-page .modal-action-btn:hover,
+body.exp-page .sidebar-action-btn:hover {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+  box-shadow: 0 16px 36px rgba(6, 16, 26, .16) !important;
+}
+
+body.exp-page .section.dark .btn,
+body.exp-page .contact-card .btn,
+body.exp-page .result-card .btn,
+body.exp-page .site-footer .btn {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, .62) !important;
+}
+
+body.exp-page .section.dark .btn:hover,
+body.exp-page .contact-card .btn:hover,
+body.exp-page .result-card .btn:hover,
+body.exp-page .site-footer .btn:hover {
+  color: #06101a !important;
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 16px 38px rgba(255, 255, 255, .16) !important;
+}
+
+body.exp-page .theme-btn,
+body.exp-page .suggestion-chip,
+body.exp-page .config-chip,
+body.exp-page .segmented-control button {
+  background: transparent !important;
+  border-color: rgba(6, 16, 26, .24) !important;
+  color: rgba(6, 16, 26, .78) !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .theme-btn:hover,
+body.exp-page .suggestion-chip:hover,
+body.exp-page .config-chip:hover,
+body.exp-page .segmented-control button:hover {
+  background: rgba(6, 16, 26, .06) !important;
+  border-color: #06101a !important;
+  color: #06101a !important;
+}
+
+body.exp-page .theme-btn.is-active,
+body.exp-page .config-chip.is-active,
+body.exp-page .segmented-control button.is-active {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+  box-shadow: 0 10px 24px rgba(6, 16, 26, .12) !important;
+}
+
+/* Quiet white editorial aesthetic for expedition and configurator pages */
+body.exp-page {
+  --lab-bg: #ffffff;
+  --lab-text: #06101a;
+  --lab-muted: rgba(6, 16, 26, .62);
+  --lab-soft: rgba(6, 16, 26, .42);
+  --lab-panel: rgba(6, 16, 26, .025);
+  --lab-panel-strong: rgba(6, 16, 26, .045);
+  --lab-line: rgba(6, 16, 26, .1);
+  --lab-line-strong: rgba(6, 16, 26, .18);
+  --lab-cyan: #0077b6;
+  --lab-blue: #0077b6;
+  --lab-gold: #989477;
+  --lab-radius: 8px;
+  background: #ffffff !important;
+  color: #06101a;
+}
+
+body.exp-page::before {
+  display: none !important;
+}
+
+body.exp-page main,
+body.exp-page .section,
+body.exp-page .section-tight,
+body.exp-page .section.dark,
+body.exp-page main > section:not(.exp-hero) {
+  color: #06101a !important;
+  background: #ffffff !important;
+}
+
+body.exp-page .section,
+body.exp-page .section-tight {
+  border-top: 1px solid rgba(6, 16, 26, .045);
+}
+
+body.exp-page h1,
+body.exp-page h2,
+body.exp-page h3,
+body.exp-page .exp-hero h1,
+body.exp-page .page-title-row h2,
+body.exp-page .overview-card h2,
+body.exp-page .contact-card h2,
+body.exp-page .route-info h3,
+body.exp-page .dossier-booking h3,
+body.exp-page .result-card h3,
+body.exp-page .configurator-title h2 {
+  color: #06101a !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 400 !important;
+  letter-spacing: .01em !important;
+  line-height: 1.04 !important;
+  text-transform: none !important;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+body.exp-page .exp-hero h1 {
+  max-width: 980px;
+  font-size: clamp(4rem, 8.4vw, 9rem) !important;
+  line-height: .9 !important;
+}
+
+body.exp-page .page-title-row h2,
+body.exp-page .overview-card h2,
+body.exp-page .contact-card h2,
+body.exp-page .configurator-title h2 {
+  font-size: clamp(3rem, 5.4vw, 5.8rem) !important;
+}
+
+body.exp-page h3,
+body.exp-page .route-info h3,
+body.exp-page .dossier-booking h3,
+body.exp-page .result-card h3 {
+  font-size: clamp(2rem, 3vw, 3.35rem) !important;
+}
+
+body.exp-page p,
+body.exp-page .lead,
+body.exp-page .muted,
+body.exp-page li,
+body.exp-page .config-step-desc,
+body.exp-page .result-card p {
+  color: rgba(6, 16, 26, .62) !important;
+  font-weight: 400;
+  line-height: 1.72;
+}
+
+body.exp-page .eyebrow,
+body.exp-page .lab-kicker,
+body.exp-page .crumbs,
+body.exp-page .dossier-status,
+body.exp-page .dossier-hero-badges span,
+body.exp-page .expedition-route-region small,
+body.exp-page .progress-head strong,
+body.exp-page .portrait-header {
+  color: #0077b6 !important;
+  letter-spacing: .11em !important;
+}
+
+body.exp-page .eyebrow::before {
+  background: #0077b6 !important;
+}
+
+body.exp-page .site-header,
+body.exp-page .site-header.is-scrolled,
+body.exp-page .exp-page .site-header,
+.exp-page .site-header:not(.is-scrolled) {
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(6, 16, 26, .08) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .exp-hero,
+body.exp-page .dossier-hero {
+  color: #06101a !important;
+  background-color: #ffffff !important;
+}
+
+body.exp-page .exp-hero::before,
+body.exp-page .dossier-hero::before {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .86) 44%, rgba(255, 255, 255, .42) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, .84) 0%, rgba(255, 255, 255, .98) 100%) !important;
+}
+
+body.exp-page .exp-hero::after,
+body.exp-page .dossier-hero::after {
+  opacity: .16 !important;
+}
+
+body.exp-page .overview-card,
+body.exp-page .bullet,
+body.exp-page .included-card,
+body.exp-page .comfort-card,
+body.exp-page .guide,
+body.exp-page .route-info,
+body.exp-page .route-visual,
+body.exp-page .dossier-booking,
+body.exp-page .contact-card,
+body.exp-page .expedition-route-card,
+body.exp-page .expedition-route-detail,
+body.exp-page .expedition-route-region > div,
+body.exp-page .mini-region-map,
+body.exp-page .expedition-experience-card,
+body.exp-page .expedition-atmosphere-copy,
+body.exp-page .faq-item,
+body.exp-page .builder-panel,
+body.exp-page .result-card,
+body.exp-page .config-modal-content {
+  color: #06101a !important;
+  background: rgba(255, 255, 255, .94) !important;
+  border: 1px solid rgba(6, 16, 26, .1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 18px 52px rgba(6, 16, 26, .035) !important;
+}
+
+body.exp-page .quick-facts,
+body.exp-page .subnav,
+body.exp-page .subnav a,
+body.exp-page .dossier-status,
+body.exp-page .dossier-hero-badges span,
+body.exp-page .date-row,
+body.exp-page .expedition-route-extra div,
+body.exp-page .scenario-metrics div,
+body.exp-page .estimation-details,
+body.exp-page .badge-cloud span,
+body.exp-page .theme-btn,
+body.exp-page .suggestion-chip,
+body.exp-page .config-chip,
+body.exp-page .segmented-control,
+body.exp-page .segmented-control button {
+  background: transparent !important;
+  border-color: rgba(6, 16, 26, .1) !important;
+  box-shadow: none !important;
+}
+
+body.exp-page img,
+body.exp-page .comfort-card img,
+body.exp-page .guide img,
+body.exp-page .expedition-experience-card img,
+body.exp-page .expedition-atmosphere-grid img,
+body.exp-page .map-image-wrapper {
+  border-radius: 8px !important;
+  filter: saturate(.72) contrast(.96) brightness(1.05) !important;
+}
+
+body.exp-page input,
+body.exp-page select,
+body.exp-page textarea,
+body.exp-page .lead-form input,
+body.exp-page .lead-form select,
+body.exp-page .lead-form textarea,
+body.exp-page .config-text-input,
+body.exp-page .config-textarea-input,
+body.exp-page .config-input-group {
+  color: #06101a !important;
+  background: #ffffff !important;
+  border-color: rgba(6, 16, 26, .18) !important;
+  border-radius: 8px !important;
+}
+
+body.exp-page input:focus,
+body.exp-page select:focus,
+body.exp-page textarea:focus,
+body.exp-page .config-text-input:focus,
+body.exp-page .config-textarea-input:focus {
+  border-color: rgba(6, 16, 26, .34) !important;
+  box-shadow: 0 0 0 4px rgba(6, 16, 26, .045) !important;
+}
+
+body.exp-page .site-footer {
+  color: #06101a !important;
+  background: #ffffff !important;
+  border-top: 1px solid rgba(6, 16, 26, .1) !important;
+}
+
+body.exp-page .site-footer p,
+body.exp-page .site-footer a,
+body.exp-page .site-footer strong {
+  color: rgba(6, 16, 26, .62) !important;
+}
+
+body.exp-page .contact-card .btn,
+body.exp-page .result-card .btn,
+body.exp-page .site-footer .btn {
+  color: #06101a !important;
+  border-color: rgba(6, 16, 26, .48) !important;
+}
+
+body.exp-page .contact-card .btn:hover,
+body.exp-page .result-card .btn:hover,
+body.exp-page .site-footer .btn:hover {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+}
+
+body.exp-page .configurator-sticky-bar {
+  color: #06101a !important;
+  background: rgba(255, 255, 255, .92) !important;
+  border: 1px solid rgba(6, 16, 26, .12) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 18px 52px rgba(6, 16, 26, .1) !important;
+  backdrop-filter: blur(16px) saturate(120%) !important;
+}
+
+body.exp-page .sticky-bar-info strong,
+body.exp-page .sticky-bar-info span strong,
+body.exp-page .sticky-bar-progress span {
+  color: #06101a !important;
+  text-shadow: none !important;
+}
+
+body.exp-page .sticky-bar-info span {
+  color: rgba(6, 16, 26, .58) !important;
+}
+
+body.exp-page .sticky-progress-track {
+  background: rgba(6, 16, 26, .1) !important;
+}
+
+body.exp-page .sticky-progress-track span {
+  background: #0077b6 !important;
+  box-shadow: none !important;
+}
+
+/* V17 - restore readability and remove unnecessary frames */
+body.exp-page .subnav {
+  background: rgba(255, 255, 255, .96) !important;
+  border-bottom: 1px solid rgba(6, 16, 26, .06) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .subnav a {
+  color: rgba(6, 16, 26, .72) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .subnav a:hover {
+  color: #06101a !important;
+  background: rgba(6, 16, 26, .035) !important;
+}
+
+body.exp-page .overview-card,
+body.exp-page .bullet,
+body.exp-page .included-card,
+body.exp-page .comfort-card,
+body.exp-page .guide,
+body.exp-page .route-info,
+body.exp-page .route-visual,
+body.exp-page .dossier-booking,
+body.exp-page .contact-card,
+body.exp-page .expedition-route-card,
+body.exp-page .expedition-route-detail,
+body.exp-page .expedition-route-region > div,
+body.exp-page .mini-region-map,
+body.exp-page .expedition-atmosphere-copy,
+body.exp-page .expedition-atmosphere-grid figure,
+body.exp-page .faq-item,

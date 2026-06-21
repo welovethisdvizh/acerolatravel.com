@@ -1,0 +1,85 @@
+body.exp-page .expedition-route-card::before,
+body.exp-page .expedition-route-card::after {
+  display: none !important;
+}
+
+body.exp-page .expedition-route-detail {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+}
+
+body.exp-page .expedition-route-detail::before {
+  display: none !important;
+}
+
+body.exp-page .expedition-route-detail h3 {
+  color: #ffffff !important;
+}
+
+body.exp-page .expedition-route-detail p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.exp-page .expedition-route-detail-transport {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+body.exp-page .expedition-route-extra {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+body.exp-page .expedition-route-extra div {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+body.exp-page .expedition-route-extra dt {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.exp-page .expedition-route-extra dd {
+  color: #ffffff !important;
+}
+
+body.exp-page .expedition-route-stats {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+body.exp-page .stats-label {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.exp-page .stats-val {
+  color: #ffffff !important;
+}
+
+/* Regional Details */
+body.exp-page .expedition-route-region > div {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+body.exp-page .expedition-route-region strong {
+  color: #ffffff !important;
+}
+
+body.exp-page .expedition-route-region p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.exp-page .expedition-route-region small {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.exp-page .mini-region-map {
+  border: none !important;
+  box-shadow: none !important;
+}

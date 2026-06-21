@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerola Travel — премиальные экспедиции по России</title>
+  <meta name="description" content="Авторские экспедиции Acerola Travel: редкие маршруты, камерные группы, сильная организация и индивидуальные путешествия по России.">
+  <script>
+    document.documentElement.classList.add('fonts-loading');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Pinyon+Script&family=Manrope:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=block" rel="stylesheet">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var reveal = function () {
+        root.classList.remove('fonts-loading');
+        root.classList.add('fonts-ready');
+      };
+
+      if (!document.fonts) {
+        reveal();
+        return;
+      }
+
+      Promise.all([
+        document.fonts.load('300 120px "Cormorant Garamond"'),
+        document.fonts.load('400 110px "Pinyon Script"')
+      ]).then(reveal, reveal);
+
+      window.setTimeout(reveal, 2400);
+    }());
+  </script>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/configurator.css">
+  <link rel="stylesheet" href="assets/css/lab-home.css">
+  <link rel="stylesheet" href="assets/css/lab-responsive.css">
+  <link rel="stylesheet" href="assets/css/lab-expeditions.css">
+  <link rel="stylesheet" href="assets/css/dossier.css">
+  <link rel="stylesheet" href="assets/css/dossier-route.css">
+  <link rel="stylesheet" href="assets/css/dossier-responsive.css">
+  <link rel="stylesheet" href="assets/css/premium.css">
+</head>
+<body class="home lab-home">
+  <header class="site-header home-hero-header lab-header">
+    <div class="header-inner lab-header-inner">
+      <a class="brand lab-brand" href="index.html" aria-label="Acerola Travel">
+        <img src="assets/images/logo.png" alt="Acerola Travel">
+        <span class="brand-text">ACEROLA</span>
+      </a>
+      <nav class="main-nav lab-nav" aria-label="Основная навигация">
+        <a href="#expeditions">Экспедиции</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="lab-header-actions">
+        <a class="lab-header-phone" href="tel:+79950880505">+7 (995) 088-05-05</a>
+        <a class="btn lab-btn lab-btn-primary lab-header-cta" href="#contact">Подобрать маршрут</a>
+        <button class="menu-toggle lab-menu-toggle" aria-label="Открыть меню" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-reference lab-hero">
+      <div class="hero-ref-bg">
+        <div class="hero-ref-left-fade"></div>
+        <img class="hero-ref-img" src="assets/images/hero_expedition_tents_white.png" alt="Expedition Base Camp">
+      </div>
+
+      <div class="container hero-ref-container">
+        <div class="hero-ref-copy" data-reveal>
+          <span class="hero-ref-kicker">— ЗАКРЫТОЕ ЭКСПЕДИЦИОННОЕ БЮРО</span>
+          
+          <div class="hero-ref-title-wrap">
+            <h1 class="hero-ref-title">ACEROLA</h1>
+            <span class="hero-ref-title-script">Travel</span>
+          </div>
+
+          <p class="hero-ref-lead">Твоя эстетичная перезагрузка</p>
+          
+          <div class="hero-ref-actions">
+            <a class="btn btn-navy" href="#contact">ОБСУДИТЬ ЭКСПЕДИЦИЮ</a>
+            <a class="btn-text" href="#expeditions">ПЕРЕЙТИ К СЦЕНАРИЯМ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab-about" id="about">
+      <div class="container lab-about-hero">
+        <div class="lab-about-copy" data-reveal>
+          <span class="lab-kicker">Закрытое экспедиционное бюро</span>
+          <h2>Редкие маршруты. Тщательная организация</h2>
+          <p class="lead">Acerola — это закрытое экспедиционное бюро, которое проектирует редкие маршруты для людей, для которых путешествие — это не просто отдых, а глубокий личный опыт. Мы собираем сложную логистику и готовим резервные сценарии, чтобы каждый шаг на маршруте был под контролем.</p>
+          <div class="lab-about-actions">
+            <a class="btn lab-btn lab-btn-primary" href="#contact">Обсудить экспедицию</a>
+            <a class="lab-about-link" href="#expeditions">Перейти к сценариям</a>
+          </div>
+        </div>
+        <figure class="lab-about-image" data-reveal>
+          <img src="assets/images/about_expedition.png" alt="Зимняя арктическая экспедиция Acerola Bureau">
+          <figcaption class="lab-about-badge">ACEROLA METHOD // экспедиционный контроль</figcaption>
+        </figure>
+      </div>
+
+      <div class="container lab-about-cards">
+        <article class="lab-about-card" data-reveal>
+          <span>01</span>
+          <h3>Как мы проектируем маршрут</h3>
+          <p>Сценарий экспедиции собирается вокруг целей группы, сезонности, ветровых нагрузок и резервных путей отхода.</p>
+        </article>
+        <article class="lab-about-card" data-reveal>
+          <span>02</span>
+          <h3>Принципы Acerola</h3>
+          <p>Никакого массового туризма. Только проверенная снегоходная техника, автономная связь и уважение к северной среде.</p>
+        </article>
+        <article class="lab-about-card" data-reveal>
+          <span>03</span>
+          <h3>Команда сопровождения</h3>
+          <p>Опытные полярные гиды, механики и координаторы, готовые решать любые логистические задачи на маршруте.</p>
+        </article>
+      </div>
+
+      <div class="container lab-about-process" data-reveal>
+        <div class="lab-about-process-head">
+          <div>
+            <span class="lab-kicker">Почему формат камерный</span>
+            <h3>Камерная группа — залог безопасности</h3>
+          </div>
+        </div>
+        <div class="lab-process-grid">
+          <article class="lab-process-step">
+            <span>Шаг</span>
+            <h4>Анализ целей и допуска.</h4>
+            <p>Фиксируем физическую подготовку участников, опыт управления техникой и ожидания от поездки.</p>
+          </article>
+          <article class="lab-process-step">
+            <span>Шаг</span>
+            <h4>Сборка сценария.</h4>
+            <p>Прорабатываем детальный тайминг переходов, точки дозаправки, приюты и запасные базы на случай непогоды.</p>
+          </article>
+          <article class="lab-process-step">
+            <span>Шаг</span>
+            <h4>Подготовка обеспечения.</h4>
+            <p>Тестируем снегоходы, комплектуем спутниковую связь, аптечки первой помощи и экспедиционные рационы.</p>
+          </article>
+          <article class="lab-process-step">
+            <span>Шаг</span>
+            <h4>Выход на маршрут.</h4>
+            <p>Команда сопровождения ведет группу по треку, оперативно координируя тайминг с базой контроля.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="container lab-about-cta" data-reveal>
+        <div>
+          <h3>Индивидуальное проектирование</h3>
+          <p>Расскажите о вашей задаче, географических целях и составе участников. Мы разработаем приватный маршрутный сценарий.</p>
+        </div>
+        <a class="btn lab-btn lab-btn-primary" href="#contact">Запросить маршрут</a>
+      </div>
+    </section>
+
+    <section class="section lab-expeditions" id="expeditions">
+      <div class="container">
+        <div class="section-head lab-section-head" data-reveal>
+          <div>
+            <span class="lab-kicker">Ближайшие экспедиции</span>
+            <h2>Сценарии экспедиций</h2>
+          </div>
+          <p class="lead">Выберите направление с готовой программой или оставьте заявку на индивидуальный сценарий под вашу группу.</p>
+        </div>
+
+                <div class="lab-editorial-dossiers" data-reveal>
+          
+          <!-- Dossier 01 -->
+          <article class="editorial-dossier-row" id="dossier-01">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-01').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-01" class="editorial-main-img" src="assets/images/manaraga_winter.png" alt="Приполярный Урал: Суперэкстрим" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/manaraga_winter.png" onclick="window.swapEditorialPhoto('01', 'assets/images/manaraga_winter.png', this)" alt="Приполярный Урал зимой">
+                <img class="editorial-thumb" src="assets/images/card-pripolyarny.png" onclick="window.swapEditorialPhoto('01', 'assets/images/card-pripolyarny.png', this)" alt="Снегоходная экспедиция">
+                <img class="editorial-thumb" src="assets/images/pripolyarny_taiga.png" onclick="window.swapEditorialPhoto('01', 'assets/images/pripolyarny_taiga.png', this)" alt="Приполярная тайга">
+                <img class="editorial-thumb" src="assets/images/hero-snowmobile.png" onclick="window.swapEditorialPhoto('01', 'assets/images/hero-snowmobile.png', this)" alt="Снегоходный маршрут">
+              </div>
+              <div class="editorial-stamp"><span>01</span></div>
+            </div>
+            
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-open">Набор открыт</span>
+                <span class="dossier-id">DOSSIER 01 / 65.02° N</span>
+              </div>
+              <h3>Приполярный Урал: Суперэкстрим</h3>
+              <p class="editorial-desc">Семидневный маршрут через Кедровый Шор, Манарагу и Саблю: большие снегоходные пробеги, таежные приюты, радиальные выходы и плотная экспедиционная динамика.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">7 дней</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">до 8 мест</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">от 159 000 ₽</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/pripolyarny-ural.html">Открыть сценарий</a>
+            </div>
+          </article>
+
+          <!-- Dossier 02 -->
+          <article class="editorial-dossier-row" id="dossier-02">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-02').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-02" class="editorial-main-img" src="assets/images/dyatlov_pass_winter.png" alt="Перевал Дятлова" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/dyatlov_pass_winter.png" onclick="window.swapEditorialPhoto('02', 'assets/images/dyatlov_pass_winter.png', this)" alt="Перевал зимой">
+                <img class="editorial-thumb" src="assets/images/card-dyatlov.png" onclick="window.swapEditorialPhoto('02', 'assets/images/card-dyatlov.png', this)" alt="Перевал Дятлова обложка">
+                <img class="editorial-thumb" src="assets/images/dyatlov_tent.png" onclick="window.swapEditorialPhoto('02', 'assets/images/dyatlov_tent.png', this)" alt="Палатка на перевале">
+                <img class="editorial-thumb" src="assets/images/dyatlov_forest.png" onclick="window.swapEditorialPhoto('02', 'assets/images/dyatlov_forest.png', this)" alt="Таежный лес у перевала">
+              </div>
+              <div class="editorial-stamp"><span>02</span></div>
+            </div>
+            
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-limited">Мало мест</span>
+                <span class="dossier-id">DOSSIER 02 / 61.76° N</span>
+              </div>
+              <h3>Перевал Дятлова</h3>
+              <p class="editorial-desc">Пятидневная программа из Екатеринбурга через Вижай, Ушму и базу Ильича: техника, мансийский быт, Отортен, баня и спутниковая связь.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">5 дней</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">6 мест</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">от 120 000 ₽</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/dyatlov-pass.html">Открыть сценарий</a>
+            </div>
+          </article>
+
+          <!-- Dossier 03 -->
+          <article class="editorial-dossier-row" id="dossier-03">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-03').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-03" class="editorial-main-img" src="assets/images/card-manypupuner.png" alt="Плато Маньпупунёр" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/card-manypupuner.png" onclick="window.swapEditorialPhoto('03', 'assets/images/card-manypupuner.png', this)" alt="Маньпупунер обложка">
+                <img class="editorial-thumb" src="assets/images/manypupuner_pillars.png" onclick="window.swapEditorialPhoto('03', 'assets/images/manypupuner_pillars.png', this)" alt="Столбы выветривания">
+                <img class="editorial-thumb" src="assets/images/manypupuner_snowmobiles.png" onclick="window.swapEditorialPhoto('03', 'assets/images/manypupuner_snowmobiles.png', this)" alt="Снегоходы на плато">
+                <img class="editorial-thumb" src="assets/images/manypupuner_sunset.png" onclick="window.swapEditorialPhoto('03', 'assets/images/manypupuner_sunset.png', this)" alt="Закат на плато Маньпупунёр">
+              </div>
+              <div class="editorial-stamp"><span>03</span></div>
+            </div>
+            
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-order">Предзаказ</span>
+                <span class="dossier-id">DOSSIER 03 / 62.26° N</span>
+              </div>
+              <h3>Плато Маньпупунёр</h3>
+              <p class="editorial-desc">Экспедиция к легендарным каменным идолам: сложнейшая зимняя логистика, бескрайняя тундра Коми и уникальный баланс между автономностью и комфортом.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">6 дней</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">до 7 мест</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">обговаривается индивидуально</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/manypupuner.html">Открыть сценарий</a>
+            </div>
+          </article>
+
+          <!-- Dossier 04 -->
+          <article class="editorial-dossier-row" id="dossier-04">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-04').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-04" class="editorial-main-img" src="assets/images/card-dikson.png" alt="Диксон Арктика" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/card-dikson.png" onclick="window.swapEditorialPhoto('04', 'assets/images/card-dikson.png', this)" alt="Диксон обложка">
+                <img class="editorial-thumb" src="assets/images/dikson_port.png" onclick="window.swapEditorialPhoto('04', 'assets/images/dikson_port.png', this)" alt="Порт Диксон">
+                <img class="editorial-thumb" src="assets/images/arctic_aurora.png" onclick="window.swapEditorialPhoto('04', 'assets/images/arctic_aurora.png', this)" alt="Полярное сияние">
+                <img class="editorial-thumb" src="assets/images/dikson_ice.png" onclick="window.swapEditorialPhoto('04', 'assets/images/dikson_ice.png', this)" alt="Арктический паковый лед">
+              </div>
+              <div class="editorial-stamp"><span>04</span></div>
+            </div>
+            
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-private">Камерная группа</span>
+                <span class="dossier-id">DOSSIER 04 / 73.50° N</span>
+              </div>
+              <h3>Диксон Арктика</h3>
+              <p class="editorial-desc">Выход за пределы обитаемого мира: крайний север Таймыра, заброшенный полярный порт, вечные льды и фантастические всполохи северного сияния.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">7 дней</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">камерно</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">обговаривается индивидуально</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/dikson.html">Открыть сценарий</a>
+            </div>
+          </article>
+
+          <!-- Dossier 05 -->
+          <article class="editorial-dossier-row" id="dossier-05">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-05').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-05" class="editorial-main-img" src="assets/images/card-weekend.jpeg" alt="Weekend North" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/card-weekend.jpeg" onclick="window.swapEditorialPhoto('05', 'assets/images/card-weekend.jpeg', this)" alt="Weekend North обложка">
+                <img class="editorial-thumb" src="assets/images/weekend_lodge.png" onclick="window.swapEditorialPhoto('05', 'assets/images/weekend_lodge.png', this)" alt="Экспедиционный приют">
+                <img class="editorial-thumb" src="assets/images/winter_banya.png" onclick="window.swapEditorialPhoto('05', 'assets/images/winter_banya.png', this)" alt="Зимняя баня">
+                <img class="editorial-thumb" src="assets/images/weekend_forest.png" onclick="window.swapEditorialPhoto('05', 'assets/images/weekend_forest.png', this)" alt="Снегоходный след в сосновом бору">
+              </div>
+              <div class="editorial-stamp"><span>05</span></div>
+            </div>
+            
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-open">Короткий формат</span>
+                <span class="dossier-id">DOSSIER 05 / 57.01° N</span>
+              </div>
+              <h3>Weekend North</h3>
+              <p class="editorial-desc">Быстрый снегоходный выезд на 2–3 дня для перезагрузки: заснеженный сосновый бор, уединенный лесной приют, русская баня и драйв.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">2-3 дня</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">до 10 мест</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">обговаривается индивидуально</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/weekend.html">Открыть сценарий</a>
+            </div>
+          </article>
+
+          <!-- Dossier 06 -->
+          <article class="editorial-dossier-row" id="dossier-06">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-06').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-06" class="editorial-main-img" src="assets/images/card-custom.png" alt="Свой маршрут" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/card-custom.png" onclick="window.swapEditorialPhoto('06', 'assets/images/card-custom.png', this)" alt="Свой маршрут обложка">
+                <img class="editorial-thumb" src="assets/images/comfort-lodging.png" onclick="window.swapEditorialPhoto('06', 'assets/images/comfort-lodging.png', this)" alt="Премиальное проживание">
+                <img class="editorial-thumb" src="assets/images/comfort-food.png" onclick="window.swapEditorialPhoto('06', 'assets/images/comfort-food.png', this)" alt="Питание">
+                <img class="editorial-thumb" src="assets/images/comfort-transport.png" onclick="window.swapEditorialPhoto('06', 'assets/images/comfort-transport.png', this)" alt="Снегоходы">
+              </div>
+              <div class="editorial-stamp"><span>06</span></div>
+            </div>
+            
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-private">Приватный статус</span>
+                <span class="dossier-id">DOSSIER 06 / CUSTOM</span>
+              </div>
+              <h3>Свой маршрут</h3>
+              <p class="editorial-desc">Индивидуально разработанный сценарий экспедиции под ваши требования: персональный график, выбор техники, класс проживания и шеф-повар.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">любые даты</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">ваша группа</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">обговаривается индивидуально</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/custom.html">Спроектировать сценарий</a>
+            </div>
+          </article>
+
+          <!-- Dossier 07 -->
+          <article class="editorial-dossier-row" id="dossier-07">
+            <div class="editorial-media-column">
+              <div class="editorial-image-wrapper">
+                <div class="media-zoom-overlay" onclick="window.openLightbox(document.getElementById('main-img-07').src)">
+                  <span class="zoom-icon" aria-hidden="true"></span>
+                  <span>увеличить фото</span>
+                </div>
+                <img id="main-img-07" class="editorial-main-img" src="assets/images/usva-pillars-winter.jpg" alt="Усьвинские столбы" onclick="window.openLightbox(this.src)">
+              </div>
+              <div class="editorial-thumbs">
+                <img class="editorial-thumb active" src="assets/images/usva-pillars-winter.jpg" onclick="window.swapEditorialPhoto('07', 'assets/images/usva-pillars-winter.jpg', this)" alt="Усьвинские столбы зимой">
+                <img class="editorial-thumb" src="assets/images/usva-pillars-river.jpg" onclick="window.swapEditorialPhoto('07', 'assets/images/usva-pillars-river.jpg', this)" alt="Река Усьва">
+                <img class="editorial-thumb" src="assets/images/usva-pillars-snow.jpg" onclick="window.swapEditorialPhoto('07', 'assets/images/usva-pillars-snow.jpg', this)" alt="Зимняя Усьва">
+                <img class="editorial-thumb" src="assets/images/usva-stone-city.webp" onclick="window.swapEditorialPhoto('07', 'assets/images/usva-stone-city.webp', this)" alt="Каменный город">
+              </div>
+              <div class="editorial-stamp"><span>07</span></div>
+            </div>
+
+            <div class="editorial-info-column">
+              <div class="editorial-meta-line">
+                <span class="dossier-status status-open">Новый спокойный тур</span>
+                <span class="dossier-id">DOSSIER 07 / PERM KRAI</span>
+              </div>
+              <h3>Усьвинские столбы</h3>
+              <p class="editorial-desc">Спокойный трехдневный выезд из Екатеринбурга: Каменный город, река Усьва, Чертов палец, баня и активная программа на выбор.</p>
+              <div class="editorial-facts-table">
+                <div class="fact-item">
+                  <span class="fact-label">Длительность</span>
+                  <span class="fact-value">3 дня</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Размер группы</span>
+                  <span class="fact-value">камерно</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Бюджет</span>
+                  <span class="fact-value">от 40 000 ₽</span>
+                </div>
+              </div>
+              <a class="btn lab-btn lab-btn-primary editorial-cta-btn" href="expeditions/usvinskie-stolby.html">Открыть сценарий</a>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab-advantages">
+      <div class="container">
+        <div class="section-head lab-section-head" data-reveal>
+          <div>
+            <span class="lab-kicker">Почему с нами</span>
+            <h2>Организация, которая держит маршрут</h2>
+          </div>
+        </div>
+        <div class="lab-advantage-grid">
+          <article class="lab-glass-card" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-5"/></svg>
+            <h3>Маршруты, которых нет в массовом туризме</h3>
+            <p>Работаем с направлениями, где важны опыт, логистика и знание местности.</p>
+          </article>
+          <article class="lab-glass-card" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v18"/><path d="M18 3v18"/><path d="M6 7h12"/><path d="M6 17h12"/></svg>
+            <h3>Команда сопровождает на каждом этапе</h3>
+            <p>До старта, на маршруте и после возвращения у вас есть понятный контакт и план.</p>
+          </article>
+          <article class="lab-glass-card" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M2 21v-2a4 4 0 0 1 3-3.9"/></svg>
+            <h3>Камерные группы и сильное окружение</h3>
+            <p>Меньше случайных людей, больше внимания к динамике группы и качеству опыта.</p>
+          </article>
+          <article class="lab-glass-card" data-reveal>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-1.5Z"/><path d="M8 7h7"/><path d="M8 11h7"/><path d="M8 15h4"/></svg>
+            <h3>Программа продумана как сценарий</h3>
+            <p>Каждый день имеет темп, опорные точки, запасные решения и место для эмоций.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab-stats">
+      <div class="container lab-stats-grid" data-reveal>
+        <div><strong>10+</strong><span>направлений</span></div>
+        <div><strong>24/7</strong><span>сопровождение</span></div>
+        <div><strong>8–10</strong><span>гостей в группе</span></div>
+        <div><strong>100%</strong><span>маршруты под ключ</span></div>
+      </div>
+    </section>
+
+    <section class="section lab-reviews" id="reviews">
+      <div class="container">
+        <div class="section-head lab-section-head" data-reveal>
+          <div>
+            <span class="lab-kicker">Отзывы / доверие</span>
+            <h2>После маршрута остаётся команда</h2>
+          </div>
+        </div>
+        <div class="lab-review-grid">
+          <article class="lab-review-card" data-reveal>
+            <img class="lab-avatar" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2UwZjJmMSIvPgogIDxjaXJjbGUgY3g9IjMwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPGNpcmNsZSBjeD0iMzAiIGN5PSIzNSIgcj0iNiIgZmlsbD0iI2ZmY2RkMiIvPgogIDxjaXJjbGUgY3g9IjcwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPGNpcmNsZSBjeD0iNzAiIGN5PSIzNSIgcj0iNiIgZmlsbD0iI2ZmY2RkMiIvPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTUiIHI9IjI4IiBmaWxsPSIjZmZmZmZmIi8+CiAgPGNpcmNsZSBjeD0iNDIiIGN5PSI1MCIgcj0iMyIgZmlsbD0iIzI2MzIzOCIvPgogIDxjaXJjbGUgY3g9IjU4IiBjeT0iNTAiIHI9IjMiIGZpbGw9IiMyNjMyMzgiLz4KICA8ZWxsaXBzZSBjeD0iNTAiIGN5PSI2MiIgcng9IjE0IiByeT0iMTAiIGZpbGw9IiNmNWY1ZjUiLz4KICA8cG9seWdvbiBwb2ludHM9IjQ1LDU4IDU1LDU4IDUwLDYzIiBmaWxsPSIjMjYzMjM4IiBzdHJva2U9IiMyNjMyMzgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjM2IiBjeT0iNTYiIHI9IjMiIGZpbGw9IiNmZjhhODAiIG9wYWNpdHk9IjAuNiIvPgogIDxjaXJjbGUgY3g9IjY0IiBjeT0iNTYiIHI9IjMiIGZpbGw9IiNmZjhhODAiIG9wYWNpdHk9IjAuNiIvPgogIDxwYXRoIGQ9Ik0zMiwzOCBDNDIsMjQgNTgsMjQgNjgsMzggWiIgZmlsbD0iIzAwOTZjNyIvPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMjQiIHI9IjUiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+" alt="Алексей К.">
+            <p>“Маршрут ощущался как кино, но без хаоса: каждый переезд, база и запасной план были на месте.”</p>
+            <strong>Алексей К.</strong>
+            <span>Приполярный Урал</span>
+          </article>
+          <article class="lab-review-card" data-reveal>
+            <img class="lab-avatar" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2U4ZWFmNiIvPgogIDxwb2x5Z29uIHBvaW50cz0iMjAsNDUgMzUsMTUgNDUsMzgiIGZpbGw9IiNmZmZmZmYiLz4KICA8cG9seWdvbiBwb2ludHM9IjI0LDQyIDM0LDIwIDQwLDM3IiBmaWxsPSIjZmY4YTgwIiBvcGFjaXR5PSIwLjUiLz4KICA8cG9seWdvbiBwb2ludHM9IjgwLDQ1IDY1LDE1IDU1LDM4IiBmaWxsPSIjZmZmZmZmIi8+CiAgPHBvbHlnb24gcG9pbnRzPSI3Niw0MiA2NiwyMCA2MCwzNyIgZmlsbD0iI2ZmOGE4MCIgb3BhY2l0eT0iMC41Ii8+CiAgPHBhdGggZD0iTTI1LDUwIEMyMCw2OCAzNSw3OCA1MCw3OCBDNjUsNzggODAsNjggNzUsNTAgQzc1LDQwIDI1LDQwIDI1LDUwIFoiIGZpbGw9IiNmZmZmZmYiLz4KICA8cG9seWdvbiBwb2ludHM9IjQwLDUwIDUwLDYyIDYwLDUwIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHBhdGggZD0iTTMyLDQ4IFEzNyw0NCA0Miw0OCIgc3Ryb2tlPSIjMjYzMjM4IiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik01OCw0OCBRNjMsNDQgNjgsNDgiIHN0cm9rZT0iIzI2MzIzOCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjYwIiByPSIzLjUiIGZpbGw9IiMyNjMyMzgiLz4KICA8Y2lyY2xlIGN4PSIzMCIgY3k9IjU4IiByPSI0IiBmaWxsPSIjZmY4YTgwIiBvcGFjaXR5PSIwLjYiLz4KICA8Y2lyY2xlIGN4PSI3MCIgY3k9IjU4IiByPSI0IiBmaWxsPSIjZmY4YTgwIiBvcGFjaXR5PSIwLjYiLz4KPC9zdmc+" alt="Мария С.">
+            <p>“Понравилось, что нас не просто довезли до точки, а провели через весь опыт спокойно и уверенно.”</p>
+            <strong>Мария С.</strong>
+            <span>Перевал Дятлова</span>
+          </article>
+          <article class="lab-review-card" data-reveal>
+            <img class="lab-avatar" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2ZmZjljNCIvPgogIDxlbGxpcHNlIGN4PSI1MCIgY3k9IjU1IiByeD0iMzAiIHJ5PSIyNiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxwYXRoIGQ9Ik0yMCw1MiBDMTIsNjAgMTYsNzUgMjYsNzAgWiIgZmlsbD0iI2NmZDhkYyIvPgogIDxwYXRoIGQ9Ik04MCw1MiBDODgsNjAgODQsNzUgNzQsNzAgWiIgZmlsbD0iI2NmZDhkYyIvPgogIDxjaXJjbGUgY3g9IjM4IiBjeT0iNDgiIHI9IjExIiBmaWxsPSIjZmZlMDgyIi8+CiAgPGNpcmNsZSBjeD0iNjIiIGN5PSI0OCIgcj0iMTEiIGZpbGw9IiNmZmUwODIiLz4KICA8Y2lyY2xlIGN4PSIzOCIgY3k9IjQ4IiByPSI2IiBmaWxsPSIjMjYzMjM4Ii8+CiAgPGNpcmNsZSBjeD0iMzYiIGN5PSI0NiIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIvPgogIDxjaXJjbGUgY3g9IjYyIiBjeT0iNDgiIHI9IjYiIGZpbGw9IiMyNjMyMzgiLz4KICA8Y2lyY2xlIGN4PSI2MCIgY3k9IjQ2IiByPSIyIiBmaWxsPSIjZmZmZmZmIi8+CiAgPHBvbHlnb24gcG9pbnRzPSI0OCw1NCA1Miw1NCA1MCw2MiIgZmlsbD0iI2ZmYjMwMCIvPgogIDxwYXRoIGQ9Ik00NSw2NiBRNTAsNjMgNTUsNjYiIHN0cm9rZT0iI2IwYmVjNSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTM4LDcyIFE0Myw2OSA0OCw3MiIgc3Ryb2tlPSIjYjBiZWM1IiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4KICA8cGF0aCBkPSJNNTIsNzIgUTU3LDY5IDYyLDcyIiBzdHJva2U9IiNiMGJlYzUiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=" alt="Denis R.">
+            <p>“Private-формат собрали под семью: нагрузка, комфорт, фотографии и ощущение настоящего Севера.”</p>
+            <strong>Denis R.</strong>
+            <span>Индивидуальный маршрут</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab-contact" id="contact" data-reveal>
+      <div class="container lab-contact-card">
+        <div class="lab-contact-copy">
+          <span class="lab-kicker">Private Route Request</span>
+          <h2>Обсудить экспедицию</h2>
+          <p class="lead">Оставьте ваши контакты и пожелания — мы свяжемся для детального обсуждения и проектирования индивидуального сценария под вашу группу.</p>
+        </div>
+        <form class="lead-form lab-lead-form">
+          <input required name="name" placeholder="Имя" autocomplete="name">
+          <input required name="contact" placeholder="Телефон или Telegram" autocomplete="tel">
+          <select name="direction" aria-label="Интересующий сценарий">
+            <option disabled selected>Интересующий сценарий</option>
+            <option>Приполярный Урал: Суперэкстрим</option>
+            <option>Перевал Дятлова</option>
+            <option>Маньпупунёр</option>
+            <option>Диксон / Арктика</option>
+            <option>Weekend North</option>
+            <option>Усьвинские столбы</option>
+            <option>Индивидуальный маршрут</option>
+          </select>
+          <textarea name="message" placeholder="Предпочтительные даты, состав участников, пожелания к маршруту"></textarea>
+          <button class="btn lab-btn lab-btn-primary" type="submit">Запросить маршрут</button>
+          <small>Мы не отправляем массовые подборки. Менеджер уточнит детали и предложит подходящий сценарий.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer lab-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Acerola Travel">
+          <span>Acerola<br><em>travel</em></span>
+        </a>
+        <p>Премиальные экспедиции по России: редкие маршруты, камерные группы и точная организация.</p>
+      </div>
+      <div>
+        <strong>Экспедиции</strong>
+        <a href="expeditions/pripolyarny-ural.html">Приполярный Урал</a>
+        <a href="expeditions/dyatlov-pass.html">Перевал Дятлова</a>
+        <a href="expeditions/manypupuner.html">Маньпупунёр</a>
+        <a href="expeditions/dikson.html">Диксон</a>
+        <a href="expeditions/usvinskie-stolby.html">Усьвинские столбы</a>
+      </div>
+      <div>
+        <strong>Контакты</strong>
+        <a href="tel:+79950880505">+7 (995) 088-05-05</a>
+        <a href="https://wa.me/79950880505">WhatsApp</a>
+        <a href="mailto:hello@acerola.travel">hello@acerola.travel</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta"><a class="btn lab-btn lab-btn-primary" href="#contact">Подобрать маршрут</a></div>
+  <script src="assets/js/expedition-data.js"></script>
+  <script src="assets/js/expedition-detail.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/configurator-effects.js"></script>
+  <script src="assets/js/configurator.js"></script>
+</body>
+</html>

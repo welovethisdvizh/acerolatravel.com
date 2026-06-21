@@ -1,0 +1,120 @@
+/* Final expedition cleanup: keep the premium editorial feel without boxed text. */
+body.exp-page .overview-card,
+body.exp-page .bullet,
+body.exp-page .included-card,
+body.exp-page .comfort-card,
+body.exp-page .guide,
+body.exp-page .dossier-fit article,
+body.exp-page .expedition-atmosphere-copy {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .overview-card,
+body.exp-page .included-card,
+body.exp-page .dossier-fit article,
+body.exp-page .expedition-atmosphere-copy {
+  padding: 0 !important;
+}
+
+body.exp-page .expedition-atmosphere-panel {
+  grid-template-columns: minmax(420px, .4fr) minmax(0, 1fr) !important;
+  gap: clamp(24px, 4vw, 56px) !important;
+  align-items: center !important;
+}
+
+body.exp-page .expedition-atmosphere-copy {
+  min-height: auto !important;
+  overflow: visible !important;
+  align-content: center !important;
+}
+
+body.exp-page .expedition-atmosphere-copy h3 {
+  max-width: 100% !important;
+  color: #06101a !important;
+  font-size: clamp(2.8rem, 4.6vw, 4.25rem) !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+body.exp-page .expedition-atmosphere-copy p {
+  max-width: 34rem !important;
+}
+
+body.exp-page .expedition-atmosphere-grid figure {
+  border: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+body.exp-page .expedition-atmosphere-grid figure::after {
+  background: linear-gradient(180deg, transparent 58%, rgba(3, 7, 13, .22)) !important;
+}
+
+body.exp-page .expedition-atmosphere-grid img,
+body.exp-page .comfort-card img,
+body.exp-page .guide img {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .included-grid {
+  gap: clamp(28px, 5vw, 72px) !important;
+}
+
+body.exp-page .included-card {
+  display: block !important;
+  overflow: visible !important;
+}
+
+body.exp-page .included-card h3 {
+  margin-bottom: 18px !important;
+}
+
+body.exp-page .included-card ul {
+  gap: 14px !important;
+}
+
+body.exp-page .included-card li {
+  color: rgba(6, 16, 26, .62) !important;
+}
+
+body.exp-page .included-card li::before {
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .included-card.minus li::before {
+  content: "–" !important;
+}
+
+body.exp-page .faq-item {
+  background: transparent !important;
+  border-width: 0 0 1px !important;
+  border-color: rgba(6, 16, 26, .08) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .contact-card,
+body.exp-page .result-card {
+  box-shadow: none !important;
+}
+
+@media (max-width: 980px) {
+  body.exp-page .expedition-atmosphere-panel {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.exp-page .expedition-atmosphere-copy h3 {
+    max-width: 100% !important;
+  }
+}

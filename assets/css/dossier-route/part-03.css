@@ -1,0 +1,388 @@
+
+body.exp-page .expedition-route-scale {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 0.55rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: rgba(11, 21, 32, 0.35);
+  text-transform: uppercase;
+}
+
+/* Map Waypoint Labels */
+body.exp-page .expedition-route-map-label {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(11, 21, 32, 0.08);
+  border-radius: 12px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 12px rgba(11, 21, 32, 0.04);
+  backdrop-filter: blur(8px);
+  opacity: 0.35;
+  transition: opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+body.exp-page .expedition-route-map-label.is-active {
+  opacity: 1;
+  z-index: 30;
+  border-color: var(--lab-cyan);
+  box-shadow: 0 6px 20px rgba(0, 150, 199, 0.15);
+  background: #ffffff;
+}
+
+body.exp-page .expedition-route-map-label.label-pos-bottom {
+  transform: translate(-50%, 28px);
+}
+
+body.exp-page .expedition-route-map-label.label-pos-top {
+  transform: translate(-50%, -76px);
+}
+
+body.exp-page .expedition-route-map-label.label-pos-left {
+  transform: translate(-100%, -50%);
+  margin-left: -28px;
+}
+
+body.exp-page .expedition-route-map-label.label-pos-right {
+  transform: translate(0, -50%);
+  margin-left: 28px;
+}
+
+body.exp-page .map-label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: var(--lab-cyan);
+}
+
+body.exp-page .map-label-icon svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+body.exp-page .map-label-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+body.exp-page .map-label-title {
+  font-size: 0.62rem;
+  font-weight: 900;
+  color: var(--lab-text);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+body.exp-page .map-label-val {
+  font-size: 0.54rem;
+  font-weight: 700;
+  color: var(--lab-soft);
+}
+
+/* SVG Segments */
+body.exp-page .expedition-route-segment-shadow {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 12;
+  filter: blur(6px);
+  transition: stroke 0.3s ease;
+}
+
+body.exp-page .expedition-route-segment-shadow.is-active {
+  stroke: rgba(0, 150, 199, 0.12);
+}
+
+body.exp-page .expedition-route-segment-shadow.segment-trek.is-active {
+  stroke: rgba(168, 120, 53, 0.12);
+}
+
+body.exp-page .expedition-route-segment {
+  fill: none;
+  stroke: rgba(11, 21, 32, 0.08);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.3s ease, stroke-width 0.3s ease, filter 0.3s ease;
+}
+
+body.exp-page .expedition-route-segment.segment-trek {
+  stroke-dasharray: 3 5;
+}
+
+body.exp-page .expedition-route-segment.segment-flight {
+  stroke-dasharray: 1 5;
+}
+
+/* Active highlight overrides */
+body.exp-page .expedition-route-segment.is-active {
+  stroke-width: 4.5;
+  filter: drop-shadow(0 2px 8px rgba(0, 150, 199, 0.2));
+}
+
+body.exp-page .expedition-route-segment.segment-transfer.is-active {
+  stroke: var(--lab-cyan);
+}
+
+body.exp-page .expedition-route-segment.segment-snowmobile.is-active {
+  stroke: var(--lab-cyan);
+}
+
+body.exp-page .expedition-route-segment.segment-trek.is-active {
+  stroke: var(--lab-gold);
+  stroke-width: 4;
+}
+
+body.exp-page .expedition-route-segment.segment-flight.is-active {
+  stroke: var(--aurora-purple);
+  stroke-width: 4;
+}
+
+body.exp-page .expedition-route-segment.segment-expedition.is-active {
+  stroke: var(--lab-cyan);
+}
+
+/* Segment Pill Badges */
+body.exp-page .expedition-route-transport {
+  position: absolute;
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transform: translate(-50%, -50%) scale(0.9);
+  border: 1px solid rgba(11, 21, 32, 0.08);
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: var(--lab-text);
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(11, 21, 32, 0.06);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+body.exp-page .expedition-route-transport.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  border-color: var(--lab-cyan);
+}
+
+body.exp-page .expedition-route-transport-trek.is-active {
+  border-color: var(--lab-gold);
+}
+
+body.exp-page .expedition-route-transport-transfer svg {
+  stroke: var(--lab-muted);
+}
+
+body.exp-page .expedition-route-transport-snowmobile svg {
+  stroke: var(--lab-cyan);
+}
+
+body.exp-page .expedition-route-transport-trek svg {
+  stroke: var(--lab-gold);
+}
+
+body.exp-page .expedition-route-transport-flight svg {
+  stroke: var(--aurora-purple);
+}
+
+/* Sidebar Stats Card */
+body.exp-page .expedition-route-stats {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: rgba(11, 21, 32, 0.02);
+  border: 1px solid rgba(11, 21, 32, 0.04);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+body.exp-page .stats-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+body.exp-page .stats-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--lab-soft);
+}
+
+body.exp-page .stats-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body.exp-page .stats-label {
+  flex: 1;
+  font-size: 0.62rem;
+  font-weight: 900;
+  color: var(--lab-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+body.exp-page .stats-val {
+  font-size: 0.88rem;
+  font-weight: 900;
+  color: var(--lab-text);
+  white-space: nowrap;
+}
+
+/* --- Premium Guides Section Styling --- */
+body.exp-page .guides {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+body.exp-page .guide {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  background: #ffffff; /* Premium snow-white background */
+  border: 1px solid rgba(11, 21, 32, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 36px rgba(11, 21, 32, 0.03), 0 2px 8px rgba(11, 21, 32, 0.01);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+body.exp-page .guide:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 150, 199, 0.18);
+  box-shadow: 0 20px 48px rgba(11, 21, 32, 0.08), 0 4px 12px rgba(11, 21, 32, 0.02);
+}
+
+body.exp-page .guide-avatar-wrap {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(11, 21, 32, 0.06);
+}
+
+body.exp-page .guide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95) brightness(0.95) contrast(1.05);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+}
+
+body.exp-page .guide:hover img {
+  transform: scale(1.05);
+  filter: saturate(1) brightness(1) contrast(1.02);
+}
+
+body.exp-page .guide-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(11, 21, 32, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 4px 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body.exp-page .guide-badge-logo {
+  width: 12px !important;
+  height: 12px !important;
+  object-fit: contain;
+  filter: none !important;
+}
+
+body.exp-page .guide-badge span {
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+body.exp-page .guide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+body.exp-page .guide-info h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--lab-text); /* Premium dark title text */
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+body.exp-page .guide-info p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--lab-muted) !important; /* Premium dark description text */
+  margin: 0;
+}
+
+/* Fix heading and eyebrow visibility inside dark sections (like route map) */
+body.exp-page .section.dark h2 {
+  color: #ffffff !important;
+}
+
+body.exp-page .section.dark .eyebrow {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+@media (max-width: 768px) {
+  body.exp-page .guides {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  body.exp-page .guide {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  body.exp-page .guide-info {
+    align-items: center;
+  }
+}

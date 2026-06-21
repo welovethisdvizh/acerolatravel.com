@@ -1,0 +1,560 @@
+
+body.exp-page .dossier-booking .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+body.exp-page .dossier-booking p {
+  margin-top: 16px;
+  color: var(--lab-muted);
+  line-height: 1.55;
+}
+
+body.exp-page .route-info,
+body.exp-page .included-card,
+body.exp-page .comfort-card,
+body.exp-page .guide,
+body.exp-page .faq-item {
+  border: 1px solid rgba(11, 21, 32, .08);
+  border-radius: var(--lab-radius);
+  background: rgba(255, 255, 255, .75);
+  color: var(--lab-text);
+  box-shadow: 0 16px 48px rgba(11, 21, 32, .04);
+  backdrop-filter: blur(18px) saturate(120%);
+}
+
+body.exp-page .overview-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .overview-card::before,
+body.exp-page .dossier-booking::before {
+  display: none !important;
+}
+
+body.exp-page .contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .22;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(132, 231, 255, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(132, 231, 255, .1) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+body.exp-page .overview-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+body.exp-page .overview-card h2,
+body.exp-page .page-title-row h2,
+body.exp-page #faq h2,
+body.exp-page .contact-card h2 {
+  margin-top: 14px;
+  font-size: clamp(2.7rem, 5.2vw, 5.1rem);
+  line-height: .98;
+}
+
+body.exp-page .overview-card .lead {
+  margin-top: 20px;
+  max-width: 780px;
+}
+
+body.exp-page .dates-box {
+  display: flex;
+  gap: 48px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(11, 21, 32, 0.08);
+  border-bottom: 1px solid rgba(11, 21, 32, 0.08);
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  padding: 18px 0;
+  background: transparent !important;
+}
+
+body.exp-page .date-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  background: transparent !important;
+}
+
+body.exp-page .date-row span {
+  color: var(--lab-soft);
+  font-size: .76rem;
+  font-weight: 500;
+  text-transform: none;
+}
+
+body.exp-page .date-row b {
+  color: var(--lab-text);
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 720px) {
+  body.exp-page .dates-box {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+}
+
+body.exp-page .dossier-coordinates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+body.exp-page .dossier-coordinates span {
+  border: 1px solid rgba(11, 21, 32, .08);
+  border-radius: 999px;
+  padding: 8px 10px;
+  color: var(--lab-soft);
+  background: rgba(255, 255, 255, .7);
+  font-size: .68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+body.exp-page .bullet-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 24px;
+}
+
+body.exp-page .bullet {
+  position: relative;
+  min-height: auto;
+  padding: 0 0 16px 0 !important;
+  font-weight: 900;
+  line-height: 1.42;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transition: transform .32s ease;
+}
+
+body.exp-page .bullet::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, var(--lab-cyan), transparent);
+}
+
+body.exp-page .bullet:hover,
+body.exp-page .comfort-card:hover,
+body.exp-page .included-card:hover,
+body.exp-page .guide:hover,
+body.exp-page .expedition-experience-card:hover,
+body.exp-page .dossier-fit article:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 150, 199, .25);
+  box-shadow: 0 20px 48px rgba(11, 21, 32, .06), 0 0 24px rgba(0, 150, 199, .05);
+}
+
+body.exp-page .page-title-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+body.exp-page .page-title-row .lead {
+  margin: 0;
+}
+
+body.exp-page .route-card {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 18px;
+}
+
+body.exp-page .route-visual {
+  min-height: 460px;
+  border: 1px solid rgba(11, 21, 32, .08);
+  border-radius: var(--lab-radius);
+  background:
+    radial-gradient(circle at 60% 42%, rgba(0, 150, 199, .08), transparent 32%),
+    linear-gradient(135deg, #ffffff, #f5f8fa);
+  box-shadow: 0 16px 48px rgba(11, 21, 32, .04);
+}
+
+body.exp-page .route-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .3;
+  background-image:
+    linear-gradient(rgba(132, 231, 255, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(132, 231, 255, .1) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+body.exp-page .route-visual svg {
+  opacity: .8;
+}
+
+body.exp-page .route-dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(238, 246, 251, .85);
+  background: var(--lab-cyan);
+  box-shadow: 0 0 0 7px rgba(132, 231, 255, .1), 0 0 26px rgba(132, 231, 255, .32);
+}
+
+body.exp-page .route-dot:hover,
+body.exp-page .route-dot.is-active {
+  background: var(--lab-gold);
+  transform: scale(1.25);
+}
+
+body.exp-page .route-info {
+  padding: 28px;
+}
+
+body.exp-page .route-info h3 {
+  margin: 16px 0 14px;
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+}
+
+body.exp-page .route-info p,
+body.exp-page .route-line {
+  color: var(--lab-muted);
+}
+
+body.exp-page .expedition-route-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(132, 231, 255, .12), transparent 24rem),
+    linear-gradient(180deg, #03070d, #07111d);
+}
+
+body.exp-page .expedition-route-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(237, 246, 252, .16);
+  border-radius: var(--lab-radius);
+  padding: clamp(22px, 3vw, 36px);
+  background:
+    linear-gradient(180deg, rgba(3, 7, 13, .72), rgba(3, 7, 13, .94)),
+    var(--route-image) center / cover no-repeat,
+    #07111d;
+  box-shadow: 0 34px 110px rgba(0, 0, 0, .42);
+  isolation: isolate;
+}
+
+body.exp-page .expedition-route-card::before,
+body.exp-page .expedition-route-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body.exp-page .expedition-route-card::before {
+  background:
+    linear-gradient(110deg, rgba(3, 7, 13, .96) 0%, rgba(3, 7, 13, .66) 52%, rgba(3, 7, 13, .88) 100%),
+    radial-gradient(circle at 72% 22%, rgba(132, 231, 255, .2), transparent 18rem);
+}
+
+body.exp-page .expedition-route-card::after {
+  opacity: .22;
+  background-image:
+    linear-gradient(rgba(132, 231, 255, .11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(132, 231, 255, .09) 1px, transparent 1px);
+  background-size: 68px 68px;
+  mix-blend-mode: screen;
+}
+
+body.exp-page .expedition-route-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+body.exp-page .expedition-route-kicker,
+body.exp-page .expedition-route-region span,
+body.exp-page .expedition-route-step {
+  color: var(--lab-cyan);
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+body.exp-page .expedition-route-head h2 {
+  margin-top: 12px;
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+}
+
+body.exp-page .expedition-route-head p {
+  max-width: 420px;
+  color: var(--lab-muted);
+  line-height: 1.65;
+}
+
+body.exp-page .expedition-route-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(310px, .75fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+body.exp-page .expedition-route-map-scroll {
+  min-width: 0;
+  border: 1px solid rgba(237, 246, 252, .14);
+  border-radius: var(--lab-radius);
+  background: rgba(3, 7, 13, .38);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(132, 231, 255, .04);
+}
+
+body.exp-page .expedition-route-map-scroll:focus-visible {
+  outline: 2px solid rgba(132, 231, 255, .72);
+  outline-offset: 4px;
+}
+
+body.exp-page .expedition-route-map {
+  position: relative;
+  min-height: 520px;
+}
+
+body.exp-page .expedition-route-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+body.exp-page .expedition-route-shadow,
+body.exp-page .expedition-route-path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body.exp-page .expedition-route-shadow {
+  stroke: rgba(3, 7, 13, .86);
+  stroke-width: 14;
+  filter: blur(12px);
+}
+
+body.exp-page .expedition-route-path {
+  stroke: rgba(132, 231, 255, .78);
+  stroke-width: 3;
+  stroke-dasharray: 10 12;
+  animation: routeDash 18s linear infinite;
+}
+
+body.exp-page .expedition-route-stop {
+  position: absolute;
+  z-index: 3;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(237, 246, 252, .92);
+  border-radius: 50%;
+  color: #06101a;
+  background: rgba(132, 231, 255, .92);
+  box-shadow: 0 0 0 10px rgba(132, 231, 255, .1), 0 16px 40px rgba(0, 0, 0, .34);
+  transform: translate(-50%, -50%);
+  transition: transform .28s ease, background .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+
+body.exp-page .expedition-route-stop span {
+  font-size: .76rem;
+  font-weight: 900;
+}
+
+body.exp-page .expedition-route-stop:hover,
+body.exp-page .expedition-route-stop:focus-visible {
+  transform: translate(-50%, -50%) scale(1.08);
+  border-color: #fff;
+  box-shadow: 0 0 0 12px rgba(132, 231, 255, .16), 0 18px 46px rgba(0, 0, 0, .4);
+}
+
+body.exp-page .expedition-route-stop.is-active {
+  background: linear-gradient(135deg, var(--lab-cyan), #fff);
+  box-shadow: 0 0 0 12px rgba(132, 231, 255, .16), 0 0 34px rgba(132, 231, 255, .42), 0 18px 46px rgba(0, 0, 0, .4);
+}
+
+/* Color contrast overrides for white cards inside dark sections */
+body.exp-page .expedition-route-card {
+  color: var(--lab-text) !important;
+}
+body.exp-page .expedition-route-head h2,
+body.exp-page .expedition-route-detail h3,
+body.exp-page .expedition-route-region strong {
+  color: var(--lab-text) !important;
+}
+body.exp-page .expedition-route-head p,
+body.exp-page .expedition-route-detail p,
+body.exp-page .expedition-route-region p {
+  color: var(--lab-muted) !important;
+}
+body.exp-page .route-info h3 {
+  color: var(--lab-text) !important;
+}
+body.exp-page .route-info p,
+body.exp-page .route-info .route-line {
+  color: var(--lab-muted) !important;
+}
+body.exp-page .guide h3 {
+  color: var(--lab-text) !important;
+}
+body.exp-page .guide p {
+  color: var(--lab-muted) !important;
+}
+body.exp-page .dossier-coordinates span {
+  color: var(--lab-muted) !important;
+  border-color: rgba(11, 21, 32, 0.15) !important;
+}
+body.exp-page .expedition-route-region > div {
+  background: rgba(11, 21, 32, 0.9) !important;
+}
+body.exp-page .expedition-route-region strong {
+  color: #ffffff !important;
+}
+body.exp-page .expedition-route-region p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+body.exp-page .expedition-route-region small {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+body.exp-page .expedition-experience-card h3 {
+  color: #ffffff !important;
+}
+body.exp-page .expedition-experience-card p {
+  color: rgba(238, 246, 251, .8) !important;
+}
+
+/* ==========================================================================
+   Fully Frameless Redesign Overrides
+   ========================================================================== */
+
+/* Comfort/Experience cards */
+body.exp-page .comfort-card {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+body.exp-page .comfort-card img {
+  border-radius: var(--lab-radius) !important;
+}
+
+body.exp-page .comfort-card div {
+  padding: 18px 0 0 0 !important;
+}
+
+/* Included cards */
+body.exp-page .included-card {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Guides profiles */
+body.exp-page .guide {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+/* FAQ accordion style */
+body.exp-page .faq-item {
+  border: none !important;
+  border-bottom: 1px solid rgba(11, 21, 32, 0.08) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 16px 0 !important;
+}
+
+/* Dossier Fit Grid */
+body.exp-page .dossier-fit article {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+}
+
+body.exp-page .dossier-fit article h3 {
+  margin-top: 20px !important;
+}
+
+/* Contact Card */
+body.exp-page .contact-card {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+}
+
+body.exp-page .contact-card::after {
+  display: none !important;
+}
+
+body.exp-page .contact-card::before {
+  display: none !important;
+}
+
+/* Operational modules / Atmosphere */
+body.exp-page .expedition-experience-card {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .expedition-atmosphere-copy {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+  align-content: center !important;
+}
+
+/* Route Section / Map Details (Borderless on dark background) */
+body.exp-page .expedition-route-card {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+

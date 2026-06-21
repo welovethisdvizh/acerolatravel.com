@@ -1,0 +1,565 @@
+/* ===== v12 expedition detail dossier ===== */
+body.exp-page {
+  --lab-bg: #f5f8fa;
+  --lab-graphite: #ffffff;
+  --lab-panel: rgba(11, 21, 32, .03);
+  --lab-panel-strong: rgba(11, 21, 32, .06);
+  --lab-line: rgba(11, 21, 32, .08);
+  --lab-line-strong: rgba(0, 150, 199, .22);
+  --lab-text: #0b1420;
+  --lab-muted: rgba(11, 21, 32, .7);
+  --lab-soft: rgba(11, 21, 32, .5);
+  --lab-cyan: #0096c7;
+  --lab-blue: #0077b6;
+  --lab-silver: #4a5768;
+  --lab-gold: #a87835;
+  --lab-amber: #995c24;
+  --lab-radius: 8px;
+  --container: 1220px;
+  margin: 0;
+  padding-bottom: 0;
+  overflow-x: hidden;
+  color: var(--lab-text);
+  background: var(--lab-bg);
+  font-family: Manrope, Arial, sans-serif;
+}
+
+body.exp-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 150, 199, 0.08), transparent 35rem),
+    radial-gradient(circle at 85% 15%, rgba(155, 93, 229, 0.06), transparent 35rem),
+    radial-gradient(circle at 50% 75%, rgba(241, 91, 181, 0.04), transparent 40rem),
+    linear-gradient(180deg, #f5f8fa 0%, #eef3f7 50%, #e6ecf1 100%);
+  background-size: 200% 200%;
+  animation: auroraBackground 22s ease infinite alternate;
+}
+
+body.exp-page h1,
+body.exp-page h2,
+body.exp-page h3 {
+  color: var(--lab-text);
+  font-family: Oswald, Manrope, Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+body.exp-page p,
+body.exp-page a,
+body.exp-page span,
+body.exp-page dt,
+body.exp-page dd,
+body.exp-page input,
+body.exp-page select,
+body.exp-page textarea,
+body.exp-page button {
+  letter-spacing: 0;
+}
+
+body.exp-page .container {
+  width: min(var(--container), calc(100% - 48px));
+}
+
+body.exp-page .section {
+  position: relative;
+  overflow: hidden;
+  padding: 104px 0;
+  background: transparent;
+}
+
+body.exp-page .section.dark {
+  background: var(--navy) !important;
+  color: #ffffff !important;
+}
+
+body.exp-page .section-tight {
+  position: relative;
+  padding: 86px 0;
+  background: transparent;
+}
+
+body.exp-page main section[id] {
+  scroll-margin-top: 118px;
+}
+
+body.exp-page .lead {
+  color: var(--lab-muted);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+body.exp-page .muted {
+  color: var(--lab-muted);
+}
+
+body.exp-page .btn {
+  min-height: 52px;
+  border-radius: 999px;
+  padding: 14px 21px;
+  border: 1px solid transparent;
+  font-size: .78rem;
+  letter-spacing: .06em;
+  white-space: normal;
+  position: relative;
+  overflow: hidden;
+}
+
+body.exp-page .btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, .28) 45%, transparent 72%);
+  transform: translateX(-120%);
+  transition: transform .65s ease;
+}
+
+body.exp-page .btn:hover::after {
+  transform: translateX(120%);
+}
+
+body.exp-page .btn-wood,
+body.exp-page .btn-light {
+  color: #06101a;
+  background: linear-gradient(135deg, #e6c885, #8be9ff 56%, #dbe6ef);
+  box-shadow: 0 18px 48px rgba(132, 231, 255, .18), 0 10px 30px rgba(217, 179, 107, .13);
+}
+
+body.exp-page .btn-ghost {
+  color: var(--lab-text);
+  background: rgba(11, 21, 32, .03);
+  border-color: rgba(11, 21, 32, .15);
+  backdrop-filter: blur(14px);
+}
+
+body.exp-page .btn-ghost:hover {
+  background: rgba(11, 21, 32, .06);
+  border-color: rgba(11, 21, 32, .25);
+}
+
+body.exp-page .site-header,
+body.exp-page .site-header.is-scrolled,
+body.exp-page .exp-page .site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 80;
+  background: rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid rgba(11, 21, 32, .08);
+  box-shadow: none;
+  backdrop-filter: blur(18px) saturate(130%);
+  animation: labHeaderIn .8s cubic-bezier(.2, .75, .2, 1) both;
+}
+
+body.exp-page .site-header.is-scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom-color: rgba(11, 21, 32, .12);
+  box-shadow: 0 16px 48px rgba(11, 21, 32, .05);
+}
+
+body.exp-page .header-inner,
+body.exp-page .site-header.is-scrolled .header-inner {
+  width: min(1320px, calc(100% - 48px));
+  height: 82px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+}
+
+body.exp-page .brand {
+  justify-self: start;
+  gap: 0;
+}
+
+body.exp-page .brand img,
+body.exp-page .footer-brand img {
+  width: 74px;
+  height: 54px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(11, 21, 32, .12));
+}
+
+body.exp-page .brand span {
+  display: none;
+}
+
+body.exp-page .main-nav {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  min-width: 0;
+  font-size: .78rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+body.exp-page .main-nav a {
+  color: rgba(11, 21, 32, .85);
+  opacity: 1;
+  position: relative;
+  padding: 8px 0;
+  transition: color .24s ease;
+}
+
+body.exp-page .main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--lab-cyan), transparent);
+  transform: scaleX(0);
+  transition: transform .28s ease;
+}
+
+body.exp-page .main-nav a:hover {
+  color: var(--lab-cyan);
+}
+
+body.exp-page .main-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+body.exp-page .header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+body.exp-page .phone {
+  color: rgba(11, 21, 32, .85);
+  font-size: .86rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+body.exp-page .header-actions .btn {
+  min-height: 44px;
+  padding: 11px 16px;
+  font-size: .7rem;
+}
+
+body.exp-page .menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(11, 21, 32, .12);
+  border-radius: 999px;
+  background: rgba(11, 21, 32, .03);
+  color: var(--lab-text);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0;
+}
+
+body.exp-page .menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1px;
+  background: currentColor;
+  transition: transform .24s ease, opacity .24s ease;
+}
+
+body.exp-page .menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+body.exp-page .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+body.exp-page .menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+body.exp-page .dossier-hero,
+body.exp-page .exp-hero {
+  min-height: 92svh;
+  display: grid;
+  align-items: end;
+  padding: 138px 0 70px;
+  background-position: center;
+  background-size: cover;
+  color: var(--lab-text);
+  isolation: isolate;
+}
+
+body.exp-page .dossier-hero::before,
+body.exp-page .exp-hero::before {
+  z-index: -1;
+  background:
+    radial-gradient(circle at 75% 30%, rgba(0, 150, 199, 0.12), transparent 32rem),
+    radial-gradient(circle at 20% 70%, rgba(255, 94, 0, 0.08), transparent 28rem),
+    linear-gradient(90deg, rgba(245, 248, 250, 0.94) 0%, rgba(245, 248, 250, 0.76) 45%, rgba(238, 243, 247, 0.2) 100%),
+    linear-gradient(180deg, rgba(245, 248, 250, 0.1), rgba(245, 248, 250, 0.88));
+}
+
+body.exp-page .dossier-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .32;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(132, 231, 255, .12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(132, 231, 255, .1) 1px, transparent 1px),
+    radial-gradient(circle at 74% 45%, transparent 0 8rem, rgba(132, 231, 255, .12) 8.05rem 8.1rem, transparent 8.15rem 14rem);
+  background-size: 88px 88px, 88px 88px, 100% 100%;
+  mask-image: linear-gradient(90deg, #000, rgba(0, 0, 0, .72), transparent 98%);
+}
+
+body.exp-page .exp-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+body.exp-page .crumbs {
+  margin-bottom: 22px;
+  color: var(--lab-muted);
+  font-size: .84rem;
+  font-weight: 800;
+}
+
+body.exp-page .crumbs a {
+  color: var(--lab-text);
+  text-decoration: none;
+}
+
+body.exp-page .crumbs a:hover {
+  color: var(--lab-cyan);
+}
+
+body.exp-page .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--lab-cyan);
+  font-size: .74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+}
+
+body.exp-page .eyebrow::before {
+  width: 36px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--lab-cyan), transparent);
+}
+
+body.exp-page .dossier-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+body.exp-page .dossier-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  border: 1px solid rgba(11, 21, 32, .1);
+  border-radius: 999px;
+  padding: 8px 11px;
+  color: #0b1420;
+  background: rgba(255, 255, 255, .75);
+  backdrop-filter: blur(14px);
+  font-size: .68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+body.exp-page .dossier-status-open { color: #0077b6; border-color: rgba(0, 150, 199, 0.25); background: rgba(230, 243, 250, 0.95); }
+body.exp-page .dossier-status-limited { color: #995c24; border-color: rgba(168, 120, 53, 0.25); background: rgba(253, 245, 230, 0.95); }
+body.exp-page .dossier-status-flagship { color: #4a5768; border-color: rgba(11, 21, 32, 0.2); background: rgba(240, 244, 248, 0.95); }
+body.exp-page .dossier-status-order { color: #a0522d; border-color: rgba(201, 131, 61, 0.25); background: rgba(253, 242, 230, 0.95); }
+body.exp-page .dossier-status-private { color: #0077b6; border-color: rgba(106, 157, 255, 0.25); background: rgba(230, 243, 250, 0.95); }
+
+body.exp-page .exp-hero h1 {
+  max-width: 980px;
+  margin: 18px 0 20px;
+  font-size: clamp(4.1rem, 8vw, 8.4rem);
+  line-height: .92;
+  text-shadow: none;
+}
+
+body.exp-page .exp-hero .lead {
+  max-width: 760px;
+  margin: 0;
+  color: var(--lab-muted);
+  font-size: clamp(1.05rem, 1.45vw, 1.28rem);
+}
+
+body.exp-page .exp-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+body.exp-page .quick-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  max-width: 980px;
+  margin-top: 42px;
+  border: 1px solid rgba(11, 21, 32, .08);
+  border-radius: var(--lab-radius);
+  overflow: hidden;
+  background: rgba(11, 21, 32, .08);
+  backdrop-filter: blur(18px);
+}
+
+body.exp-page .quick-facts div {
+  min-width: 0;
+  padding: 19px 18px;
+  background: rgba(255, 255, 255, .7);
+}
+
+body.exp-page .quick-facts small {
+  color: var(--lab-soft);
+  font-size: .68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+body.exp-page .quick-facts strong {
+  display: block;
+  margin-top: 7px;
+  color: var(--lab-text);
+  font-family: Manrope, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+body.exp-page .subnav {
+  position: sticky;
+  top: 82px;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid rgba(11, 21, 32, 0.08);
+  backdrop-filter: blur(16px) saturate(130%);
+}
+
+body.exp-page .subnav .container {
+  width: min(var(--container), calc(100% - 48px));
+  padding: 12px 0;
+  gap: 9px;
+}
+
+body.exp-page .subnav a {
+  border: 1px solid rgba(11, 21, 32, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(11, 21, 32, 0.7);
+  font-size: .72rem;
+  transition: background .25s ease, color .25s ease, border-color .25s ease;
+}
+
+body.exp-page .subnav a:hover {
+  color: var(--lab-cyan);
+  border-color: var(--lab-cyan);
+  background: #ffffff;
+}
+
+body.exp-page #overview .overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 380px);
+  grid-template-areas:
+    "overview booking"
+    "bullets booking";
+  gap: 40px 54px;
+  align-items: start;
+}
+
+body.exp-page .overview-card {
+  grid-area: overview;
+}
+
+body.exp-page .bullet-grid {
+  grid-area: bullets;
+}
+
+body.exp-page .dossier-booking {
+  grid-area: booking;
+  position: sticky;
+  top: 118px;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .dossier-card-kicker {
+  display: block;
+  color: var(--lab-cyan);
+  font-size: .68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+body.exp-page .dossier-booking h3 {
+  margin: 12px 0 20px;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+body.exp-page .dossier-booking dl {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 24px;
+  border-top: 1px solid rgba(11, 21, 32, 0.08);
+  border-bottom: 1px solid rgba(11, 21, 32, 0.08);
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  padding: 16px 0;
+  background: transparent !important;
+}
+
+body.exp-page .dossier-booking dl div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+body.exp-page .dossier-booking dt,
+body.exp-page .dossier-booking dd {
+  margin: 0;
+}
+
+body.exp-page .dossier-booking dt {
+  color: var(--lab-soft);
+  font-size: .76rem;
+  font-weight: 500;
+  text-transform: none;
+}
+
+body.exp-page .dossier-booking dd {
+  margin-top: 0;
+  color: var(--lab-text);
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  letter-spacing: 0.03em;
+}

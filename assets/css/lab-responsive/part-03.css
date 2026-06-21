@@ -1,0 +1,138 @@
+
+@media (max-width: 420px) {
+  body.lab-home .lab-hero-title {
+    font-size: 2.72rem;
+  }
+
+  body.lab-home .lab-about-copy h2,
+  body.lab-home .lab-section-head h2,
+  body.lab-home .lab-contact-copy h2 {
+    font-size: 2.1rem;
+  }
+
+  body.lab-home .lab-hero-signal {
+    display: none;
+  }
+
+  body.lab-home .lab-route-card {
+    min-height: 600px;
+  }
+
+  body.lab-home .lab-status {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.lab-home *,
+  body.lab-home *::before,
+  body.lab-home *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  body.lab-home .lab-star-dust {
+    display: none;
+  }
+}
+
+body.lab-home img.lab-avatar {
+  object-fit: cover;
+  border: 2px solid rgba(0, 150, 199, 0.25);
+  display: block;
+}
+
+/* Responsive overrides for lab-expeditions-showcase */
+@media (max-width: 980px) {
+  .lab-expeditions-showcase {
+    flex-direction: column;
+    height: auto;
+    border-radius: 28px;
+  }
+  
+  .lab-showcase-column {
+    flex: none;
+    width: 100%;
+    height: 380px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 30px 24px;
+    transition: height 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+  }
+  
+  .lab-showcase-column:last-child {
+    border-bottom: none;
+  }
+  
+  .lab-showcase-column:hover {
+    flex: none;
+    height: 480px;
+  }
+
+  .lab-showcase-column .lab-column-thumbs img {
+    height: 44px;
+  }
+
+  .lab-showcase-column:hover .lab-column-thumbs img {
+    height: 52px;
+  }
+}
+
+@media (max-width: 720px) {
+  .lab-expeditions-showcase {
+    border-radius: 20px;
+  }
+  
+  .lab-showcase-column {
+    height: 320px;
+    padding: 24px 20px;
+  }
+  
+  .lab-showcase-column:hover {
+    height: 420px;
+  }
+
+  .lab-showcase-column .lab-column-top h3 {
+    font-size: 1.62rem;
+  }
+
+  .lab-showcase-column .lab-column-hover-details p {
+    font-size: 0.82rem;
+    margin-bottom: 12px;
+  }
+
+  .lab-showcase-column .lab-column-thumbs img {
+    height: 38px;
+    border-radius: 6px;
+  }
+
+  .lab-showcase-column:hover .lab-column-thumbs img {
+    height: 44px;
+  }
+}
+
+@media (max-width: 420px) {
+  .lab-showcase-column {
+    height: 280px;
+  }
+  
+  .lab-showcase-column:hover {
+    height: 380px;
+  }
+
+  .lab-showcase-column .lab-column-top h3 {
+    font-size: 1.4rem;
+  }
+
+  .lab-showcase-column .lab-column-facts span {
+    font-size: 0.68rem;
+    padding: 4px 8px;
+  }
+  
+  .lab-showcase-column .lab-column-thumbs {
+    display: none;
+  }
+}

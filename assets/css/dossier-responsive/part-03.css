@@ -1,0 +1,566 @@
+body.exp-page .builder-panel,
+body.exp-page .result-card {
+  color: #06101a !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.exp-page .overview-card,
+body.exp-page .dossier-booking {
+  padding: 0 !important;
+}
+
+body.exp-page .dossier-booking {
+  max-width: 390px;
+}
+
+body.exp-page .dossier-booking h3 {
+  margin: 12px 0 20px !important;
+  color: #06101a !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(1.85rem, 2.25vw, 2.45rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.06 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+body.exp-page .dossier-booking dl,
+body.exp-page .dates-box {
+  background: transparent !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .dossier-coordinates span {
+  padding: 0 !important;
+  color: rgba(6, 16, 26, .46) !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+body.exp-page .bullet-grid {
+  gap: 26px 34px !important;
+}
+
+body.exp-page .bullet {
+  min-height: 0 !important;
+  padding: 0 0 18px !important;
+  color: #06101a !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: clamp(1rem, 1.2vw, 1.15rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.42 !important;
+}
+
+body.exp-page .bullet:hover,
+body.exp-page .comfort-card:hover,
+body.exp-page .included-card:hover,
+body.exp-page .guide:hover,
+body.exp-page .dossier-fit article:hover,
+body.exp-page .expedition-experience-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .comfort-card,
+body.exp-page .guide,
+body.exp-page .included-card,
+body.exp-page .faq-item {
+  overflow: visible !important;
+}
+
+body.exp-page .comfort-card h3,
+body.exp-page .guide h3,
+body.exp-page .included-card h3,
+body.exp-page .route-info h3,
+body.exp-page .dossier-fit article h3,
+body.exp-page .faq-item h3,
+body.exp-page .builder-panel h3 {
+  color: #06101a !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: clamp(1.08rem, 1.35vw, 1.42rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.32 !important;
+}
+
+body.exp-page .comfort-card p,
+body.exp-page .guide p,
+body.exp-page .included-card li,
+body.exp-page .route-info p,
+body.exp-page .faq-item p,
+body.exp-page .builder-panel p {
+  color: rgba(6, 16, 26, .62) !important;
+  line-height: 1.65 !important;
+}
+
+body.exp-page .comfort-card img,
+body.exp-page .guide img,
+body.exp-page .expedition-atmosphere-grid img,
+body.exp-page .map-image-wrapper img {
+  border-radius: 8px !important;
+}
+
+body.exp-page .expedition-route-section {
+  color: #06101a !important;
+  background: #ffffff !important;
+}
+
+body.exp-page .expedition-route-card {
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+body.exp-page .expedition-route-card::before,
+body.exp-page .expedition-route-card::after,
+body.exp-page .expedition-route-atmosphere,
+body.exp-page .expedition-route-detail::before {
+  display: none !important;
+}
+
+body.exp-page .expedition-route-head {
+  margin-bottom: 34px !important;
+}
+
+body.exp-page .expedition-route-head h2 {
+  max-width: 760px !important;
+  color: #06101a !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(3.1rem, 5.4vw, 5.8rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: .98 !important;
+}
+
+body.exp-page .expedition-route-head p {
+  max-width: 520px !important;
+  color: rgba(6, 16, 26, .62) !important;
+}
+
+body.exp-page .expedition-route-kicker,
+body.exp-page .expedition-route-step,
+body.exp-page .expedition-route-region small {
+  color: #0077b6 !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .72rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .1em !important;
+  text-transform: uppercase !important;
+}
+
+body.exp-page .expedition-route-map-scroll {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .expedition-route-map {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .expedition-route-detail {
+  min-height: 0 !important;
+  padding: 0 !important;
+}
+
+body.exp-page .expedition-route-detail h3 {
+  margin: 22px 0 14px !important;
+  color: #06101a !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(2.15rem, 3vw, 3.05rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.04 !important;
+}
+
+body.exp-page .expedition-route-detail p {
+  color: rgba(6, 16, 26, .64) !important;
+  line-height: 1.7 !important;
+}
+
+body.exp-page .expedition-route-detail-transport,
+body.exp-page .expedition-route-extra,
+body.exp-page .expedition-route-stats {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .expedition-route-detail-transport {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  margin-top: 18px !important;
+  padding: 0 !important;
+  color: #06101a !important;
+}
+
+body.exp-page .expedition-route-detail-transport span {
+  color: rgba(6, 16, 26, .62) !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .76rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+
+body.exp-page .expedition-route-extra {
+  border-top: 1px solid rgba(6, 16, 26, .08) !important;
+  border-bottom: 1px solid rgba(6, 16, 26, .08) !important;
+}
+
+body.exp-page .expedition-route-extra,
+body.exp-page .expedition-route-stats {
+  display: none !important;
+}
+
+body.exp-page .expedition-route-extra div:first-child {
+  border-right-color: rgba(6, 16, 26, .08) !important;
+}
+
+body.exp-page .expedition-route-region {
+  gap: 28px !important;
+}
+
+body.exp-page .expedition-route-region strong {
+  color: #06101a !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .95rem !important;
+  font-weight: 800 !important;
+}
+
+body.exp-page .expedition-route-region p {
+  color: rgba(6, 16, 26, .62) !important;
+}
+
+body.exp-page .expedition-experience-card {
+  color: #ffffff !important;
+  background: #07111d !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .expedition-experience-card::after {
+  background:
+    linear-gradient(180deg, rgba(3, 7, 13, .08) 0%, rgba(3, 7, 13, .35) 40%, rgba(3, 7, 13, .9) 100%) !important;
+}
+
+body.exp-page .expedition-experience-card img {
+  border-radius: 8px !important;
+  filter: saturate(.78) brightness(.64) contrast(1.02) !important;
+}
+
+body.exp-page .expedition-experience-card h3 {
+  color: #ffffff !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(2rem, 3vw, 3.2rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.04 !important;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, .32) !important;
+}
+
+body.exp-page .expedition-experience-card p,
+body.exp-page .module-code {
+  color: rgba(255, 255, 255, .82) !important;
+}
+
+body.exp-page .module-num {
+  color: #2aa7d7 !important;
+}
+
+body.exp-page .expedition-atmosphere-copy {
+  padding: 0 !important;
+}
+
+body.exp-page .expedition-atmosphere-copy h3 {
+  color: #06101a !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(3rem, 5vw, 5.4rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+}
+
+body.exp-page .expedition-atmosphere-copy p {
+  color: rgba(6, 16, 26, .62) !important;
+}
+
+body.exp-page .config-modal-content {
+  border-radius: 8px !important;
+}
+
+@media (max-width: 720px) {
+  html {
+    scroll-padding-top: 92px;
+  }
+
+  body.exp-page section[id] {
+    scroll-margin-top: 92px;
+  }
+
+  body.exp-page .dossier-booking {
+    max-width: none;
+  }
+
+  body.exp-page .expedition-route-detail {
+    padding-top: 12px !important;
+  }
+
+  body.exp-page .expedition-route-extra {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.exp-page .expedition-route-extra div:first-child {
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(6, 16, 26, .08) !important;
+  }
+}
+
+/* V18 - explicit cost marks and clearer configurator controls */
+body.exp-page .included-card li {
+  gap: 14px !important;
+}
+
+body.exp-page .included-card li::before {
+  content: "\2713" !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  border: 1px solid rgba(0, 119, 182, .32) !important;
+  border-radius: 50% !important;
+  color: #0077b6 !important;
+  background: rgba(0, 119, 182, .055) !important;
+  font-family: Manrope, Arial, sans-serif !important;
+  font-size: .78rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+}
+
+body.exp-page .included-card.minus li::before {
+  content: "\2013" !important;
+  border-color: rgba(152, 148, 119, .42) !important;
+  color: #777158 !important;
+  background: rgba(152, 148, 119, .06) !important;
+  font-size: 1rem !important;
+}
+
+body.exp-page.custom-page .expedition-configurator-section {
+  background: #ffffff !important;
+}
+
+body.exp-page.custom-page .configurator-snow-canvas {
+  opacity: .14 !important;
+}
+
+body.exp-page.custom-page .configurator-sticky-bar {
+  display: none !important;
+}
+
+body.exp-page.custom-page .builder-panel {
+  background: rgba(255, 255, 255, .98) !important;
+  border: 1px solid rgba(6, 16, 26, .1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 18px 52px rgba(6, 16, 26, .055) !important;
+}
+
+body.exp-page.custom-page .theme-btn,
+body.exp-page.custom-page .suggestion-chip,
+body.exp-page.custom-page .config-chip,
+body.exp-page.custom-page .segmented-control,
+body.exp-page.custom-page .segmented-control button {
+  color: rgba(6, 16, 26, .8) !important;
+  background: #ffffff !important;
+  border-color: rgba(6, 16, 26, .16) !important;
+}
+
+body.exp-page.custom-page .theme-btn:hover,
+body.exp-page.custom-page .suggestion-chip:hover,
+body.exp-page.custom-page .config-chip:hover,
+body.exp-page.custom-page .segmented-control button:hover {
+  color: #06101a !important;
+  background: rgba(6, 16, 26, .045) !important;
+  border-color: rgba(6, 16, 26, .34) !important;
+}
+
+body.exp-page.custom-page .theme-btn.is-active,
+body.exp-page.custom-page .config-chip.is-active,
+body.exp-page.custom-page .segmented-control button.is-active {
+  color: #ffffff !important;
+  background: #06101a !important;
+  border-color: #06101a !important;
+  box-shadow: 0 14px 30px rgba(6, 16, 26, .14) !important;
+}
+
+body.exp-page.custom-page .stepper-header::before {
+  height: 3px !important;
+  background: rgba(6, 16, 26, .16) !important;
+}
+
+body.exp-page.custom-page .stepper-progress-line {
+  height: 3px !important;
+  background: #06101a !important;
+  box-shadow: none !important;
+}
+
+body.exp-page.custom-page .stepper-circle {
+  background: #ffffff !important;
+  border-color: rgba(6, 16, 26, .24) !important;
+  color: rgba(6, 16, 26, .62) !important;
+  box-shadow: 0 2px 8px rgba(6, 16, 26, .06) !important;
+}
+
+body.exp-page.custom-page .stepper-node.is-active .stepper-circle {
+  color: #ffffff !important;
+  background: #009cb8 !important;
+  border-color: #009cb8 !important;
+  box-shadow: 0 0 0 4px rgba(0, 156, 184, .12), 0 8px 20px rgba(0, 156, 184, .2) !important;
+}
+
+body.exp-page.custom-page .range-control {
+  margin-bottom: 38px !important;
+}
+
+body.exp-page.custom-page input[type="range"] {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  height: 11px !important;
+  border: 1px solid rgba(6, 16, 26, .14) !important;
+  border-radius: 999px !important;
+  box-shadow: inset 0 1px 4px rgba(6, 16, 26, .12) !important;
+  cursor: pointer !important;
+}
+
+body.exp-page.custom-page input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 28px !important;
+  height: 28px !important;
+  border: 3px solid #ffffff !important;
+  border-radius: 50% !important;
+  background: var(--config-accent) !important;
+  box-shadow: 0 8px 20px rgba(6, 16, 26, .18), 0 0 0 1px rgba(6, 16, 26, .18) !important;
+}
+
+body.exp-page.custom-page input[type="range"]::-moz-range-track {
+  height: 11px !important;
+  border: 1px solid rgba(6, 16, 26, .14) !important;
+  border-radius: 999px !important;
+  background: rgba(6, 16, 26, .2) !important;
+}
+
+body.exp-page.custom-page input[type="range"]::-moz-range-progress {
+  height: 11px !important;
+  border-radius: 999px !important;
+  background: var(--config-accent) !important;
+}
+
+body.exp-page.custom-page input[type="range"]::-moz-range-thumb {
+  width: 24px !important;
+  height: 24px !important;
+  border: 3px solid #ffffff !important;
+  border-radius: 50% !important;
+  background: var(--config-accent) !important;
+  box-shadow: 0 8px 20px rgba(6, 16, 26, .18), 0 0 0 1px rgba(6, 16, 26, .18) !important;
+}
+
+body.exp-page.custom-page input[type="range"]:focus-visible {
+  outline: 3px solid rgba(0, 156, 184, .22) !important;
+  outline-offset: 6px !important;
+}
+
+body.exp-page.custom-page .config-input-group,
+body.exp-page.custom-page .config-text-input,
+body.exp-page.custom-page .config-textarea-input {
+  border-color: rgba(6, 16, 26, .22) !important;
+  box-shadow: 0 2px 10px rgba(6, 16, 26, .035) !important;
+}
+
+body.exp-page.custom-page .control-head span,
+body.exp-page.custom-page .control-label {
+  color: #06101a !important;
+}
+
+body.exp-page.custom-page .config-step-desc,
+body.exp-page.custom-page .transparent-hint {
+  color: rgba(6, 16, 26, .58) !important;
+}
+
+/* V19 - clean readable route map on expedition pages */
+body.exp-page section.dark.expedition-route-section,
+body.exp-page .section.dark.expedition-route-section {
+  color: #06101a !important;
+  background: #ffffff !important;
+}
+
+body.exp-page .section.dark.expedition-route-section h2,
+body.exp-page section.dark.expedition-route-section h2,
+body.exp-page .section.dark.expedition-route-section .expedition-route-head h2 {
+  color: #06101a !important;
+  background: transparent !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: clamp(3.15rem, 5.4vw, 5.8rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: .98 !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: #06101a !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  box-decoration-break: clone;
+}
+
+body.exp-page .section.dark.expedition-route-section .expedition-route-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body.exp-page .section.dark.expedition-route-section .expedition-route-head {
+  display: grid !important;
+  grid-template-columns: minmax(0, .9fr) minmax(320px, .7fr) !important;
+  align-items: start !important;
+  gap: clamp(28px, 6vw, 96px) !important;
+  margin-bottom: clamp(28px, 4vw, 48px) !important;
+}
+
+body.exp-page .section.dark.expedition-route-section .expedition-route-head p {
+  color: rgba(6, 16, 26, .64) !important;
+  max-width: 560px !important;
+  font-size: clamp(1rem, 1.25vw, 1.15rem) !important;
+  line-height: 1.65 !important;
+}
+
+body.exp-page .section.dark.expedition-route-section .expedition-route-kicker {
+  color: #0077b6 !important;
+  display: inline-flex !important;
+  margin-bottom: 18px !important;
+}
+
+body.exp-page .section.dark.expedition-route-section .expedition-route-body {
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, .65fr) !important;
+  gap: clamp(22px, 3vw, 34px) !important;
+  align-items: start !important;
+}
+
+body.exp-page .section.dark.expedition-route-section .expedition-route-map-scroll {
+  background: #f8fafb !important;
+  border: 1px solid rgba(6, 16, 26, .1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 18px 52px rgba(6, 16, 26, .045) !important;
+  overflow: hidden !important;
+}
